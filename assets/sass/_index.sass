@@ -4,7 +4,7 @@
 @import "susy";
 
 // shorthand
-$desktop: 12 (60px 50px) split
+$desktop: 12 (80px 20px) split
 $pad: 8 (90px 20px) split
 $mobile: 6 (90px 15px) split
 
@@ -24,9 +24,7 @@ $susy: (debug: (image: hide))
 
 
 
-
 .two_column_section
-
 	+susy-breakpoint($breakpoint_mobile, $mobile)
 		+container
 
@@ -39,7 +37,6 @@ $susy: (debug: (image: hide))
 		+container
 		.news_info
 			+span(6)
-			height: 420px
 			// background-color: #390
 			.t-title
 				font-size: 26px
@@ -90,11 +87,164 @@ $susy: (debug: (image: hide))
 			+span(6)
 
 
+.show_event_wrapper
+	background: url('../img/slashline.png')
+	background-repeat: repeat-x
+	margin-top: 60px
+	margin-bottom: 40px
+
+
+.show_event
+	+susy-breakpoint($breakpoint_mobile, $mobile)
+		+container
+
+
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		height: 500px
+		padding-top: 80px
+		.show_tab
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			border-bottom: 1px solid #CECECE
+			padding-bottom: 10px
+			padding-left: 15px
+			margin-bottom: 20px
+
+			.show_filter
+				margin-right: 40px
+				font-size: 18px
+				cursor: pointer
+
+		.show_schedule
+			width: 100%
+			height: 100px
+			background-color: #eee
+			margin-bottom: 30px
+
+		.show_content
+			.show_list
+				+span(3)
+				.show_gogo
+					border-bottom: 1px solid #CECECE
+					margin-bottom: 8px
+					h6
+						font-size: 23px
+						color: #594460
+						margin-bottom: 2px
+					p
+						font-size: 15px
+						color: #888
+						margin-bottom: 5px
+				.show_more
+					display: block
+					width: 100%
+					height: 40px
+					background-color: #222
+					color: #FFF
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					margin-top: 20px
+
+			.show_block
+				+span(9)
+				.show_detail
+					+span(4)
+					margin-bottom: 20px
+					position: relative
+					transition: all .3s
+					overflow: hidden
+					.mask
+						position: absolute
+						width: 100%
+						height: 100%
+						color: #FFF
+						text-align: center
+						padding: 20px
+						font-size: 14px
+						background: rgba(0,0,0, .0)
+						bottom: -100%
+						left: 0
+						transition: all .3s
+					&:hover
+						.mask
+							bottom: -50%
+							left: 0
+							background: rgba(0,0,0, .8)
+
+
+.activity
+	background-color: #23ABBC
+	color: #FFF
+	padding: 2px 25px
+	border-radius: 20px
 
 
 
+.performance_hall
+	+susy-breakpoint($breakpoint_mobile, $mobile)
+		+container
+
+
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		margin-bottom: 50px
+		.hall_left
+			+span(6)
+			.hall-l
+				position: relative
+				width: 100%
+				img
+					display: block
+					width: 100%
+				.t-des
+					position: absolute
+					top: 0
+					padding: 20px
+
+					h6
+						font-size: 20px
+						color: #FFF
+						font-weight: 700
+					p
+						color: #FFF
+						font-size: 14px
 
 
 
+		.hall_right
+			+span(6)
+			.hall-s
+				margin-bottom: 10px
+				position: relative
+				overflow: hidden
+				background-color: #718
+				img
+					display: block
 
+				.t-des
+					position: absolute
+					bottom: 0px
+					padding: 20px
+					background: rgba(100,143,150, .8)
+
+
+					h6
+						font-size: 20px
+						color: #FFF
+						font-weight: 700
+					p
+						color: #FFF
+						font-size: 14px
 

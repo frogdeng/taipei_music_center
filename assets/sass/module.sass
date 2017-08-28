@@ -75,14 +75,37 @@ p, h6, h5, h4, h3, h2
 			.magnifier
 				width: 40px
 				height: 40px
-				background-color: #185762
+				background-color: #222
 				margin-left: 20px
 				display: flex
 				flex-direction: row
-				justify-content: center
+				justify-content: flex-end
 				align-items: center
-				i
+				transition: all .2s
+				input
+					display: none
+					width: 0px
+					height: 30px
+					margin-right: 10px
+					background: #222
+					border: none
+					border-bottom: 1px solid #444
+					outline: none
+					padding: 0 20px
 					color: #FFF
+
+				.search_btn
+					width: 40px
+					height: 40px
+					background-color: #185762
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					transition: all .2s
+					i
+						color: #FFF
+
 			ul
 				height: 40px
 				display: flex
@@ -97,6 +120,11 @@ p, h6, h5, h4, h3, h2
 						color: #FFF
 						font-size: 13px
 
+.w_flexible
+	width: 360px !important
+	input
+		display: block !important
+		width: 300px !important
 
 
 .slick-dots
@@ -114,12 +142,74 @@ p, h6, h5, h4, h3, h2
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
 		margin-bottom: 60px
+		position: relative
 		.main_slider
 			.new_photo
 				width: 100%
 				img
 					width: 100%
+		.deskmenu
+			position: absolute
+			width: 900px
+			height: 50px
+			// background-color: #eee
+			z-index: 1000
+			right: 40px
+			top: 10px
+			display: flex
+			flex-direction: row
+			justify-content: flex-end
+			align-items: center
+			ul
+				display: flex
+				flex-direction: row
+				justify-content: flex-end
+				align-items: center
+				li
+					position: relative
+					a
+						display: block
+						height: 50px
+						color: #005968
+						padding: 0 25px
+						font-size: 18px
+						font-weight: 500
+						display: flex
+						flex-direction: row
+						justify-content: flex-end
+						align-items: center
+						&:hover
+							color: #222
 
+					ul
+						position: absolute
+						display: block
+						width: 140px
+						z-index: 1000
+						visibility: hidden
+						opacity: 0
+						top: 45px
+						left: 0px
+						transition: all .3s
+						a
+							display: block
+							height: auto
+							width: 140px
+							color: #c0c0c0
+							background: rgba(0, 0, 0, .8)
+							border-bottom: 1px solid #666
+							line-height: 1.5
+							font-size: 13px
+							padding: 10px 0
+							text-align: center
+							transition: all .3s
+							&:hover
+								color: #FFF
+
+					&:hover
+						ul
+							visibility: visible
+							opacity: 1
 
 
 
