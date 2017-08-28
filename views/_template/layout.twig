@@ -11,125 +11,145 @@
 
 
 <link rel="stylesheet" href="css/font-awesome.min.css">
-<link rel="stylesheet" href="css/iziModal.css">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/slick-theme.css">
 <link rel="stylesheet" href="css/module.css">
 
 <script src="js/jquery-1.11.1.min.js"></script>
-<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/ui.js"></script>
 
 
+<script>
+	$(document).on('ready', function() {
+		$(".main").slick({
+			dots: true,
+			infinite: true
+		});
 
+	$(".ad_banner").slick({
+			dots: true,
+			adaptiveHeight: true,
+			infinite: true
+		});
+
+
+	});
+
+</script>
 
 
 </head>
-
 <body>
 
-
-
-
-<div class="header_wrapper">
-	<header>
-		<div class="logo"><a href="index.html"><img src="img/logo.png" alt=""></a></div>
-		<div class="deskmenu">
+	<div class="top_header">
+		<div class="top_header_menu">
 			<ul>
-				<li><a href="expertises.html">核心技術</a></li>
-				<li><a href="our_clients.html">成功案例</a></li>
-				<li><a href="product_info.html">產品資訊</a></li>
-				<li><a href="solution.html">解決方案</a></li>
-				<li><a href="about_us.html">關於我們</a></li>
+				<li><a href="#">回首頁</a></li>
+				<li class="lil"></li>
+				<li><a href="#">網站導覽</a></li>
+				<li class="lil"></li>
+				<li><a href="#">常見問答</a></li>
+				<li class="lil"></li>
+				<li><a href="#">公告資訊</a></li>
+				<li class="lil"></li>
+				<li><a href="#">RSS訂閱</a></li>
+				<li class="lil"></li>
+				<li><a href="#">意見信箱</a></li>
+				<li class="lil"></li>
+				<li><a href="#">English</a></li>
+				<li class="lil"></li>
+				<li><a href="#">本站使用正體字</a></li>
+				<div class="magnifier"><i class="fa fa-search" aria-hidden="true"></i></div>
 			</ul>
 		</div>
+	</div>
 
-	<!-- <div class="hamburg">
-		<span class="aaa"></span>
-		<span class="bbb"></span>
-		<span class="ccc"></span>
-	</div> -->
-<!-- 	<div class="aside">
-		<ul>
-			<li><a href="#"  class="m-first">出版品查詢</a></li>
-			<li><a href="#" class="m-first">出版品目錄</a></li>
-			<li><a href="#" class="m-first">相關網站</a></li>
-			<li><a href="#" class="m-first"><i class="fa fa-envelope" aria-hidden="true"></i> 意見回饋</a></a></li>
-		</ul>
-	</div> -->
 
-	</header>
+<div class="main_image">
+	<div class="main_slider">
+		<section class="main slider">
+		    <div class="new_photo"><img src="img/hero-image_a1.jpg"> </div>
+		    <div class="new_photo"><img src="img/hero-image_a1.jpg"> </div>
+		    <div class="new_photo"><img src="img/hero-image_a1.jpg"> </div>
+		</section>
+	</div>
 </div>
 
 
-<!-- mobile menu -->
 
 
+
+
+
+{# 	<div class="header_wrapper">
+		<header>
+			<div class="deskmenu">
+				<ul>
+					<li><a href="expertises.html">核心技術</a></li>
+					<li><a href="our_clients.html">成功案例</a></li>
+					<li><a href="product_info.html">產品資訊</a></li>
+					<li><a href="solution.html">解決方案</a></li>
+					<li><a href="about_us.html">關於我們</a></li>
+				</ul>
+			</div>
+		</header>
+	</div> #}
 
 {% block page %}{% endblock %}
 
+	<div class="footer_wrapper">
+		<footer>
 
+			<div class="f_logo"> logogo</div>
+			<div class="links_right">
+				<div class="links_l">
+					<h6>核⼼技術</h6>
+					<a href="">透事THOUGHTS API介紹</a>
+					<a href="">中⽂檢索引擎</a>
+					<a href="">數位⼈文架構</a>
+				</div>
+				<div class="links_s">
+					<h6>成功案例</h6>
+					<a href="">數位典藏類</a>
+					<a href="">輿情監測類</a>
+					<a href="">開放資料類</a>
+					<a href="">學術教育類</a>
+					<a href="">其他</a>
+				</div>
+				<div class="links_l">
+					<h6>核⼼技術</h6>
+					<a href="">透事THOUGHTS API系列</a>
+					<a href="">蛛思CHOOSE新聞分析平台</a>
+				</div>
 
-<div class="footer_wrapper">
-	<footer>
+				<div class="links_l">
+					<h6>解決方案</h6>
+					<a href="">數位典藏解決方案</a>
+					<a href="">新聞輿情解決方案</a>
+					<a href="">開放資料解決方案</a>
+				</div>
+				<div class="clear" style="height: 30px"></div>
 
-		<div class="f_logo">
-			<img src="img/logo_w.png" alt="">
-		</div>
-		<div class="links_right">
-			<div class="links_l">
-				<h6>核⼼技術</h6>
-				<a href="">透事THOUGHTS API介紹</a>
-				<a href="">中⽂檢索引擎</a>
-				<a href="">數位⼈文架構</a>
+				<div class="links_us">
+					<h6>聯絡我們</h6>
+					<p>100 臺北市中正區思源街18號育成中心A206室</p>
+					<p>Tel   02-8978-7198</p>
+					<p>Fax  02-2367-6437</p>
+					<p>contact@blueplanet.com.tw</p>
+
+				</div>
+				<div class="links_contact">
+					<h6>關於我們</h6>
+					<a href="">線上詢問</a>
+				</div>
+				<div class="clear" style="height: 30px"></div>
+				<div class="copyright">
+					Copyright © 2016 BluePlanet Technology All Rights Reserved
+				</div>
 			</div>
-			<div class="links_s">
-				<h6>成功案例</h6>
-				<a href="">數位典藏類</a>
-				<a href="">輿情監測類</a>
-				<a href="">開放資料類</a>
-				<a href="">學術教育類</a>
-				<a href="">其他</a>
-			</div>
-			<div class="links_l">
-				<h6>核⼼技術</h6>
-				<a href="">透事THOUGHTS API系列</a>
-				<a href="">蛛思CHOOSE新聞分析平台</a>
-			</div>
-
-			<div class="links_l">
-				<h6>解決方案</h6>
-				<a href="">數位典藏解決方案</a>
-				<a href="">新聞輿情解決方案</a>
-				<a href="">開放資料解決方案</a>
-			</div>
-			<div class="clear" style="height: 30px"></div>
-
-			<div class="links_us">
-				<h6>聯絡我們</h6>
-				<p>100 臺北市中正區思源街18號育成中心A206室</p>
-				<p>Tel   02-8978-7198</p>
-				<p>Fax  02-2367-6437</p>
-				<p>contact@blueplanet.com.tw</p>
-
-			</div>
-			<div class="links_contact">
-				<h6>關於我們</h6>
-				<a href="">線上詢問</a>
-			</div>
-			<div class="clear" style="height: 30px"></div>
-			<div class="copyright">
-				Copyright © 2016 BluePlanet Technology All Rights Reserved
-			</div>
-	
-		
-		</div>
-	</footer>
-</div>
-
-
-
-
-
-
+		</footer>
+	</div>
 
 </body>
 </html>

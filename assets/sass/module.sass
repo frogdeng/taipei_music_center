@@ -1,18 +1,42 @@
 
 @import reset
+@import "bourbon"
+@import "susy"
 @import _index
 
 
-// @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css)
+
+
+@import _index
+
+// shorthand
+$desktop: 12 (70px 20px) split
+$pad: 8 (90px 20px) split
+$mobile: 6 (90px 15px) split
+
+$w_desktop: 12 split
+$w_pad: 8 split
+$w_mobile: 6 split
+
+$breakpoint_desktop: 979px
+$breakpoint_pad: 767px
+$breakpoint_mobile: 0px
+
+$susy: (debug: (image: hide))
 
 body
-
 	font-family: Microsoft JhengHei
 	-webkit-font-smoothing: antialiased
 	overflow-x: hidden
 	line-height: 1.5
-a
-	color: #00a3e4
+// a
+// 	color: #00a3e4
+
+p, h6, h5, h4, h3, h2
+	line-height: 1.5
+	font: 14px
+	color: #696969
+
 .clear
 	clear: both
 .clearfix:before,.clearfix:after
@@ -27,278 +51,79 @@ a
 
 
 
-.header_wrapper
-	background: rgba(255,255,255, 1)
 
+.top_header
+	background: #017285
+	height: 40px
 
-header
-	+susy-breakpoint($breakpoint_pad, $pad)
+	+susy-breakpoint($breakpoint_mobile, $w_mobile)
 		+container
-		height: 90px
-		display: flex
-		flex-direction: column
-		align-items: flex-start
-		justify-content: center
-		.logo
-			width: 100%
-			display: flex
-			justify-content: center
-			align-items: center
-			font-size: 26px
-			color: #222
-			img
-				width: 100%
-				display: block
-				margin-right: 15px
-
-		.hamburg
-			display: block
-			position: absolute
-			height: 40px
-			width: 40px
-			// background: #555
-			top: 30px
-			right: 10px
-			cursor: pointer
-			z-index: 2800
-		.aside
-			position: fixed
-			width: 100%
-			height: 2000px
-			background: rgba(0,0,0, .8)
-			padding-top: 50px
-			transition: all .2s ease
-			right: -100%
-			top: -30px
-			z-index: 1200
-			overflow-x: hidden
-			ul
-
-				li
-					.m-first
-						display: flex
-						justify-content: flex-start
-						align-items: center
-						height: 50px
-						width: 100%
-						padding: 0 0 0 30px
-						line-height: 1.4
-						color: #FFF
-						font-size: 16px
-						font-weight: 700
-						border-bottom: 1px solid #555
-						i
-							font-size: 20px
-							margin-right: 10px
-					.m-second_bg
-						position: absolute
-						width: 100%
-						height: 2000px
-						background: #222
-						top: 110px
-						right: -100%
-						transition: all .5s ease
-						.goback
-							margin: 0 10px
-							color: #FFF
-							width: 200px
-							height: 48px
-							margin-top: -20px
-							margin-left: 20px
-							padding-left: 20px
-							cursor: pointer
-							background-color: #555
-							// border: 1px solid #444
-							display: flex
-							justify-content: flex-start
-							align-items: center
-							i
-								font-size: 20px
-								margin-right: 10px
-						ul
-							position: absolute
-							width: 100%
-							top: -20px
-							li
-								.m-second
-									display: block
-									height: 50px
-									width: 100%
-									padding: 0 0 0 30px
-									line-height: 1.4
-									color: #999
-									font-size: 15px
-									border-bottom: 1px solid #555
-									display: flex
-									justify-content: flex-start
-									align-items: center
 
 
-	+susy-breakpoint($breakpoint_desktop, $desktop)
+	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
-		height: 90px
-		padding-left: 20px
 
-		.logo
-			height: 90px
-			width: 200px
-			float: left
-			display: flex
-			justify-content: flex-start
-			align-items: center
-			font-size: 27px
-			color: #222
-			img
-				width: 100%
-				display: block
-				margin-right: 15px
 
-		.login_section_mobile
-			display: none
-
-		.hamburg
-			display: none
-		.aside
-			display: none
-
-		.deskmenu
-			height: 70px
-			display: flex
-			justify-content: flex-end
-			align-items: flex-end
-			float: right
-			ul
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		.top_header_menu
+			.lil
+				height: 14px
+				width: 1px
+				background-color: #FFF
+				margin: 0 10px
+			.magnifier
+				width: 40px
+				height: 40px
+				background-color: #185762
+				margin-left: 20px
 				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				i
+					color: #FFF
+			ul
+				height: 40px
+				display: flex
+				flex-direction: row
 				justify-content: flex-end
 				align-items: center
 
 				li
-					display: block
-					position: relative
-					transition: all .1s
+
 					a
 						display: block
-						height: 30px
-						// background: #198
-						color: #222
-						font-weight: 700
-						border-bottom: 3px solid rgba(0,0,0,0)
-						font-size: 14px
-						line-height: 1.2
-						padding: 0 8px
-						margin: 0 10px
-						display: flex
-						justify-content: center
-						align-items: center
-						transition: all .2s
-						i
-							font-size: 20px
-							color: #FFF
-							margin-right: 5px
-						&:hover
-							color: #888
+						color: #FFF
+						font-size: 13px
 
-					ul
-						position: absolute
-						display: block
-						width: 140px
-						z-index: 1000
-						visibility: hidden
-						opacity: 0
-						top: 50px
-						left: 0px
-						transition: all .3s
-						a
-							display: block
-							height: auto
-							width: 140px
-							color: #FFF
-							background: rgba(4, 65, 115, .8)
-							border-bottom: 1px solid #99bfd4
-							line-height: 1.5
-							font-size: 13px
-							padding: 10px 0
-							text-align: center
-							transition: all .3s
-							&:hover
-								background: rgba(4, 65, 115, 1)
 
-					&:hover
-						ul
-							visibility: visible
-							opacity: 1
+
+.slick-dots
+	bottom: 15px !important
+
+.main_image
+	+susy-breakpoint($breakpoint_mobile, $w_mobile)
+		+container
+
+
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+
+
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		margin-bottom: 60px
+		.main_slider
+			.new_photo
+				width: 100%
+				img
+					width: 100%
 
 
 
 
 
-
-
-
-
-
-
-
-.hamburg-open
-	right: 0% !important
-	transform: rotate(0deg) translate3d(0px, 0px, 0px)
-
-
-.hamburg
-	.aaa, .bbb, .ccc
-		display: block
-		width: 80%
-		margin: 0 auto
-		height: 4px
-		background: #FFF
-		margin-bottom: 5px
-		margin-top: 5px
-		transition: all .5s ease
-		transform: rotate(0deg) translate3d(0px, 0px, 0px)
-
-
-.cross
-	.aaa
-		display: block
-		width: 80%
-		margin: 0 auto
-		height: 5px
-		background: #eee
-		margin-bottom: 6px
-		margin-top: 6px
-		transition: all .3s ease
-		transform: rotate(405deg) translate3d(8px, 8px, 0px)
-	.bbb
-		display: block
-		width: 80%
-		margin: 0 auto
-		height: 5px
-		background: #eee
-		margin-bottom: 6px
-		margin-top: 6px
-		transition(all .2s ease)
-		transform: rotate(0deg) translate3d(0px, 0px, 0px)
-		opacity: 0
-
-	.ccc
-		display: block
-		width: 80%
-		margin: 0 auto
-		height: 5px
-		background: #eee
-		margin-bottom: 6px
-		margin-top: 6px
-		transition: all .3s ease
-		transform: rotate(-405deg) translate3d(8px, -8px, 0px)
-
-
-.header_wrapper
-	border-bottom: 1px solid #eee
-	// height: 125px
-
-.second-open
-	right: 0% !important
-	transition: all .5s ease
 
 
 
@@ -314,10 +139,11 @@ header
 	background-size: cover
 	padding: 50px 0
 footer
-	+susy-breakpoint($breakpoint_pad, $pad)
+	+susy-breakpoint($breakpoint_mobile, $mobile)
 		+container
 
-
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
@@ -331,7 +157,7 @@ footer
 			.links_s
 				+span(2.3)
 				margin-bottom: 20px
-				h6 
+				h6
 					color: #00a3e4
 					margin-bottom: 20px
 				a
@@ -342,10 +168,10 @@ footer
 					margin-bottom: 10px
 			.links_l
 				+span(3.2)
-				h6 
+				h6
 					color: #00a3e4
 					margin-bottom: 20px
-				p 
+				p
 					color: #FFF
 				a
 					display: block
@@ -355,10 +181,10 @@ footer
 					margin-bottom: 10px
 			.links_us
 				+span(6)
-				h6 
+				h6
 					color: #00a3e4
 					margin-bottom: 20px
-				p 
+				p
 					color: #FFF
 				a
 					display: block
@@ -368,10 +194,10 @@ footer
 					margin-bottom: 10px
 			.links_contact
 				+span(3)
-				h6 
+				h6
 					color: #00a3e4
 					margin-bottom: 20px
-				p 
+				p
 					color: #FFF
 				a
 					display: block
