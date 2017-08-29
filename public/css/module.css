@@ -309,11 +309,6 @@ a {
     margin-right: 40px;
     font-size: 18px;
     cursor: pointer; }
-  .show_event .show_schedule {
-    width: 100%;
-    height: 100px;
-    background-color: #eee;
-    margin-bottom: 30px; }
   .show_event .show_content .show_list {
     width: 23.33333%;
     float: left;
@@ -359,6 +354,8 @@ a {
     position: relative;
     transition: all .3s;
     overflow: hidden; }
+  .show_event .show_content .show_block .show_detail img {
+    display: block; }
   .show_event .show_content .show_block .show_detail .mask {
     position: absolute;
     width: 100%;
@@ -459,6 +456,95 @@ a {
   .performance_hall .hall_right .hall-s .t-des p {
     color: #FFF;
     font-size: 14px; } }
+
+@media (min-width: 0px) {
+  .show_schedule {
+    max-width: 630px;
+    margin-left: auto;
+    margin-right: auto; }
+  .show_schedule:after {
+    content: " ";
+    display: block;
+    clear: both; } }
+
+@media (min-width: 767px) {
+  .show_schedule {
+    max-width: 880px;
+    margin-left: auto;
+    margin-right: auto; }
+  .show_schedule:after {
+    content: " ";
+    display: block;
+    clear: both; } }
+
+@media (min-width: 979px) {
+  .show_schedule {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 30px; }
+  .show_schedule:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .show_schedule .date_list {
+    width: 100%;
+    margin-top: 60px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center; }
+  .show_schedule .date_list .date_unit {
+    width: 50px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #eee;
+    transition: all .2s; }
+  .show_schedule .date_list .date_unit .week {
+    width: 50px;
+    height: 25px;
+    font-size: 11px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1px solid #FFF; }
+  .show_schedule .date_list .date_unit .date {
+    width: 50px;
+    height: 30px;
+    font-size: 11px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1px solid #FFF; }
+  .show_schedule .date_list .date_unit:hover {
+    transform: scale(1.2); } }
+
+.weeked {
+  color: #910 !important; }
+
+.haveshow {
+  background: #9EE0EF !important; }
 
 @media (min-width: 0px) {
   .two_column_section {
@@ -621,11 +707,6 @@ a {
     margin-right: 40px;
     font-size: 18px;
     cursor: pointer; }
-  .show_event .show_schedule {
-    width: 100%;
-    height: 100px;
-    background-color: #eee;
-    margin-bottom: 30px; }
   .show_event .show_content .show_list {
     width: 23.33333%;
     float: left;
@@ -671,6 +752,8 @@ a {
     position: relative;
     transition: all .3s;
     overflow: hidden; }
+  .show_event .show_content .show_block .show_detail img {
+    display: block; }
   .show_event .show_content .show_block .show_detail .mask {
     position: absolute;
     width: 100%;
@@ -771,6 +854,95 @@ a {
   .performance_hall .hall_right .hall-s .t-des p {
     color: #FFF;
     font-size: 14px; } }
+
+@media (min-width: 0px) {
+  .show_schedule {
+    max-width: 630px;
+    margin-left: auto;
+    margin-right: auto; }
+  .show_schedule:after {
+    content: " ";
+    display: block;
+    clear: both; } }
+
+@media (min-width: 767px) {
+  .show_schedule {
+    max-width: 880px;
+    margin-left: auto;
+    margin-right: auto; }
+  .show_schedule:after {
+    content: " ";
+    display: block;
+    clear: both; } }
+
+@media (min-width: 979px) {
+  .show_schedule {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 30px; }
+  .show_schedule:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .show_schedule .date_list {
+    width: 100%;
+    margin-top: 60px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center; }
+  .show_schedule .date_list .date_unit {
+    width: 50px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #eee;
+    transition: all .2s; }
+  .show_schedule .date_list .date_unit .week {
+    width: 50px;
+    height: 25px;
+    font-size: 11px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1px solid #FFF; }
+  .show_schedule .date_list .date_unit .date {
+    width: 50px;
+    height: 30px;
+    font-size: 11px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1px solid #FFF; }
+  .show_schedule .date_list .date_unit:hover {
+    transform: scale(1.2); } }
+
+.weeked {
+  color: #910 !important; }
+
+.haveshow {
+  background: #9EE0EF !important; }
 
 body {
   font-family: Microsoft JhengHei;
@@ -1065,12 +1237,12 @@ p, h6, h5, h4, h3, h2 {
     margin-right: 0.83333%;
     margin-bottom: 20px; }
   footer .links_right .links_s h6 {
-    color: #00a3e4;
+    color: #FFF;
     margin-bottom: 20px; }
   footer .links_right .links_s a {
     display: block;
-    color: #FFF;
-    font-size: 14px;
+    color: #eee;
+    font-size: 13px;
     line-height: 1.3;
     margin-bottom: 10px; }
   footer .links_right .links_us {
@@ -1115,12 +1287,30 @@ p, h6, h5, h4, h3, h2 {
     float: right;
     margin-left: 0.83333%;
     margin-right: 0.83333%;
-    height: 50px;
+    height: 150px;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    -ms-flex-align: center;
-    align-items: center; } }
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: end;
+    align-items: flex-end; }
+  footer .links_right .culture_dep .lan {
+    display: block;
+    width: 60%;
+    border: 1px solid #aebfbf;
+    margin-bottom: 20px; }
+  footer .links_right .culture_dep .lan select {
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 13px;
+    color: #FFF;
+    background: transparent;
+    border-radius: 0;
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none; } }
