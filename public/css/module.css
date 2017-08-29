@@ -206,6 +206,23 @@ a {
     color: #111; }
   .two_column_section .news_info .news_list .news_row:hover p {
     color: #111; }
+  .two_column_section .news_info .news_list .more {
+    display: block;
+    padding: 5px 25px;
+    margin-top: -15px;
+    border-radius: 30px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #50E3C2;
+    color: #FFF;
+    font-size: 14px;
+    float: right; }
   .two_column_section .record_video {
     width: 48.33333%;
     float: left;
@@ -217,6 +234,8 @@ a {
     margin-bottom: 10px; }
   .two_column_section .record_video .t-title img {
     margin-right: 8px; }
+  .two_column_section .record_video .t-title a {
+    color: #696969; }
   .two_column_section .record_video .video_inside {
     height: 420px; }
   .two_column_section .record_video .video_inside iframe {
@@ -302,9 +321,9 @@ a {
     margin-right: 0.83333%; }
   .show_event .show_content .show_list .show_gogo {
     border-bottom: 1px solid #CECECE;
-    margin-bottom: 8px; }
+    margin-bottom: 12px; }
   .show_event .show_content .show_list .show_gogo h6 {
-    font-size: 23px;
+    font-size: 20px;
     color: #594460;
     margin-bottom: 2px; }
   .show_event .show_content .show_list .show_gogo p {
@@ -499,6 +518,23 @@ a {
     color: #111; }
   .two_column_section .news_info .news_list .news_row:hover p {
     color: #111; }
+  .two_column_section .news_info .news_list .more {
+    display: block;
+    padding: 5px 25px;
+    margin-top: -15px;
+    border-radius: 30px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #50E3C2;
+    color: #FFF;
+    font-size: 14px;
+    float: right; }
   .two_column_section .record_video {
     width: 48.33333%;
     float: left;
@@ -510,6 +546,8 @@ a {
     margin-bottom: 10px; }
   .two_column_section .record_video .t-title img {
     margin-right: 8px; }
+  .two_column_section .record_video .t-title a {
+    color: #696969; }
   .two_column_section .record_video .video_inside {
     height: 420px; }
   .two_column_section .record_video .video_inside iframe {
@@ -595,9 +633,9 @@ a {
     margin-right: 0.83333%; }
   .show_event .show_content .show_list .show_gogo {
     border-bottom: 1px solid #CECECE;
-    margin-bottom: 8px; }
+    margin-bottom: 12px; }
   .show_event .show_content .show_list .show_gogo h6 {
-    font-size: 23px;
+    font-size: 20px;
     color: #594460;
     margin-bottom: 2px; }
   .show_event .show_content .show_list .show_gogo p {
@@ -810,7 +848,7 @@ p, h6, h5, h4, h3, h2 {
     -ms-flex-align: center;
     align-items: center;
     transition: all .2s; }
-  .top_header .top_header_menu .magnifier input {
+  .top_header .top_header_menu .magnifier input[type="text"] {
     display: none;
     width: 0px;
     height: 30px;
@@ -821,6 +859,13 @@ p, h6, h5, h4, h3, h2 {
     outline: none;
     padding: 0 20px;
     color: #FFF; }
+  .top_header .top_header_menu .magnifier .filter_radio {
+    display: none;
+    color: #FFF;
+    font-size: 13px;
+    margin-right: 15px; }
+  .top_header .top_header_menu .magnifier .filter_radio input[type="radio"] {
+    margin-right: 5px; }
   .top_header .top_header_menu .magnifier .search_btn {
     width: 40px;
     height: 40px;
@@ -852,11 +897,14 @@ p, h6, h5, h4, h3, h2 {
     font-size: 13px; } }
 
 .w_flexible {
-  width: 360px !important; }
+  width: 540px !important; }
 
-.w_flexible input {
+.w_flexible input[type="text"] {
   display: block !important;
-  width: 300px !important; }
+  width: 220px !important; }
+
+.w_flexible .filter_radio {
+  display: block !important; }
 
 .slick-dots {
   bottom: 15px !important; }
@@ -1010,13 +1058,8 @@ p, h6, h5, h4, h3, h2 {
     content: " ";
     display: block;
     clear: both; }
-  footer .links_right {
-    width: 98.33333%;
-    float: left;
-    margin-left: 0.83333%;
-    margin-right: 0.83333%; }
   footer .links_right .links_s {
-    width: 15%;
+    width: 12.5%;
     float: left;
     margin-left: 0.83333%;
     margin-right: 0.83333%;
