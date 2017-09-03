@@ -4,6 +4,7 @@
 @import "susy"
 @import _index
 @import _show
+@import _notice
 
 
 
@@ -29,6 +30,7 @@ body
 	-webkit-font-smoothing: antialiased
 	overflow-x: hidden
 	line-height: 1.5
+	font-weight: 400
 // a
 // 	color: #00a3e4
 
@@ -36,6 +38,9 @@ p, h6, h5, h4, h3, h2
 	line-height: 1.5
 	font: 14px
 	color: #696969
+a 
+	color: #01AECC
+
 
 .clear
 	clear: both
@@ -152,6 +157,7 @@ p, h6, h5, h4, h3, h2
 		margin-bottom: 60px
 		position: relative
 		.main_slider
+
 			.new_photo
 				width: 100%
 				img
@@ -159,7 +165,7 @@ p, h6, h5, h4, h3, h2
 		.logo
 			position: absolute
 			width: 250px
-			left: 30px
+			left: 70px
 			top: 20px
 			z-index: 1100
 		.deskmenu
@@ -227,6 +233,10 @@ p, h6, h5, h4, h3, h2
 
 
 
+
+
+
+
 .main_image_insidepage
 	+susy-breakpoint($breakpoint_mobile, $w_mobile)
 		+container
@@ -242,7 +252,8 @@ p, h6, h5, h4, h3, h2
 		position: relative
 		.main_slider
 			height: 300px
-			background: #eee
+			background: url(../img/hero-image_a2.jpg) bottom
+			background-size: cover
 			.new_photo
 				width: 100%
 				img
@@ -250,7 +261,7 @@ p, h6, h5, h4, h3, h2
 		.logo
 			position: absolute
 			width: 250px
-			left: 30px
+			left: 70px
 			top: 20px
 			z-index: 1100
 		.deskmenu
@@ -275,7 +286,7 @@ p, h6, h5, h4, h3, h2
 					a
 						display: block
 						height: 50px
-						color: #005968
+						color: #FFF
 						padding: 0 25px
 						font-size: 18px
 						font-weight: 500
@@ -284,7 +295,7 @@ p, h6, h5, h4, h3, h2
 						justify-content: flex-end
 						align-items: center
 						&:hover
-							color: #222
+							color: #eee
 
 					ul
 						position: absolute
