@@ -1,0 +1,52 @@
+
+@import _map.scss
+@import "bourbon";
+@import "susy";
+
+// shorthand
+$desktop: 12 (80px 20px) split
+$pad: 8 (90px 20px) split
+$mobile: 6 (90px 15px) split
+
+$w_desktop: 12 split
+$w_pad: 8 split
+$w_mobile: 6 split
+
+$breakpoint_desktop: 979px
+$breakpoint_pad: 767px
+$breakpoint_mobile: 0px
+
+$susy: (debug: (image: hide))
+
+
+
+.bread_crumbs
+	+susy-breakpoint($breakpoint_mobile, $mobile)
+		+container
+
+
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+	
+
+
+
+
+
+.two_column_section
+	+susy-breakpoint($breakpoint_mobile, $mobile)
+		+container
+
+
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+	
+
