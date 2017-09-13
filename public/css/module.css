@@ -1212,24 +1212,45 @@ a {
     padding-bottom: 10px; }
   .press_detail .t-title {
     margin-bottom: 50px;
-    font-size: 26px;
+    font-size: 30px;
     color: #165779;
     margin-bottom: 10px; }
   .press_detail .t_date {
-    margin-bottom: 20px; }
+    margin-bottom: 40px; }
   .press_detail .t_date p {
-    font-size: 12px;
+    font-size: 13px;
     color: #888; }
   .press_detail .press_content {
     margin-bottom: 40px; }
+  .press_detail .press_content .frame {
+    border: 1px solid #01AECC;
+    padding: 5px 10px;
+    color: #01AECC;
+    width: 100px;
+    text-align: center; }
+  .press_detail .press_content .text-content {
+    margin-bottom: 30px; }
   .press_detail .press_content h6 {
     font-size: 18px;
-    color: #01AECC;
+    color: #222;
     margin-top: 20px;
     margin-bottom: 5px; }
   .press_detail .press_content p {
     font-size: 14px;
     margin-bottom: 5px; }
+  .press_detail .press_content .photos {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center; }
+  .press_detail .press_content .photos img {
+    margin-right: 20px;
+    border: 1px solid #eee;
+    margin-bottom: 30px; }
   .press_detail .related_link, .press_detail .file_download {
     padding: 10px;
     margin-top: 15px;
@@ -1486,6 +1507,27 @@ a {
     align-items: center;
     margin-bottom: 20px;
     padding-bottom: 10px; }
+  .contact_us .input_div .verification {
+    margin-right: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+  .contact_us .input_div .verification input[type="text"] {
+    width: 150px;
+    height: 40px;
+    margin-right: 10px;
+    padding: 0 10px; }
+  .contact_us .input_div .verification img {
+    display: block;
+    margin-right: 10px; }
+  .contact_us .input_div .verification a {
+    display: block;
+    height: 40px;
+    font-size: 25px;
+    color: #888; }
   .contact_us .input_div .gender {
     display: -ms-flexbox;
     display: flex;
@@ -1505,11 +1547,13 @@ a {
   .contact_us .input_div input[type="text"] {
     width: 70%;
     border: 1px solid #c0c0c0;
-    height: 40px; }
+    height: 40px;
+    padding: 0 10px; }
   .contact_us .input_div textarea {
     width: 70%;
     border: 1px solid #c0c0c0;
-    height: 250px; }
+    height: 250px;
+    padding: 10px; }
   .contact_us .confirm_btn {
     display: -ms-flexbox;
     display: flex;
@@ -1525,6 +1569,7 @@ a {
     margin: 0 20px;
     width: 150px;
     height: 40px;
+    font-weight: 600;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
@@ -1540,6 +1585,7 @@ a {
     margin: 0 20px;
     width: 150px;
     height: 40px;
+    font-weight: 600;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
@@ -1739,6 +1785,14 @@ a {
 .mainblue {
   color: #FFF !important;
   background: #017285; }
+
+.lil {
+  width: 100%;
+  height: 1px;
+  background: #eee;
+  clear: both;
+  margin-bottom: 20px;
+  margin-top: 20px; }
 
 body {
   font-family: Microsoft JhengHei;
