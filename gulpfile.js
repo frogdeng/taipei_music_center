@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
     fs = require('fs'),
     glob = require('glob'),
-    
+
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     plumber = require('gulp-plumber'),
@@ -11,7 +11,7 @@ var gulp = require('gulp'),
     foreach = require('gulp-foreach'),
 
     data = require('gulp-data'),
-    path = require('path'), 
+    path = require('path'),
     bourbon = require("node-bourbon").includePaths;
 
 
@@ -88,7 +88,7 @@ gulp.task('browser-sync', function() {
 // watch
 gulp.task('watch',function(){
     gulp.watch('./assets/sass/*.sass', ['sass']);
-    gulp.watch(['./views/*.twig','./views/_template/*.twig','./public/_data/*.json'],['twig-watch']);
+    gulp.watch(['./views/*.twig','./views/*/*.twig','./public/_data/*.json'],['twig-watch']);
     gulp.watch('./public/img/*.jpg', browserSync.reload);
     gulp.watch('./public/img/*.png', browserSync.reload);
 })

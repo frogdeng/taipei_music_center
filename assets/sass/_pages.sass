@@ -39,7 +39,7 @@ $susy: (debug: (image: hide))
 		flex-direction: row
 		justify-content: space-between
 		align-items: center
-		padding: 0 20px
+		padding-left: 20px
 		font-size: 14px
 		margin-bottom: 70px
 		width: 100%
@@ -59,53 +59,74 @@ $susy: (debug: (image: hide))
 				margin: 0 10px
 				font-size: 14px
 
-		.icons
-			width: 50%
-			// background: #290
-			display: flex
-			flex-direction: row
-			justify-content: flex-end
-			align-items: center
-			.social_media, .function, .font
-				margin-left: 20px
-				display: flex
-				flex-direction: row
-				justify-content: flex-end
-				align-items: center
-				.i_icon
-					width: 30px
-					height: 30px
-					margin-right: 10px
-					color: #FFF
-					border-radius:  50%
-					display: flex
-					flex-direction: row
-					justify-content: center
-					align-items: center
-					cursor: pointer
-					i
-						font-size: 18px
 
 .fb
-	background: #4E598F
-
+	background-color: #c0c0c0
+	transition: all .3s
+	&:hover
+		background: #4E598F
 .google
-	background: #CF4C3C
+	background-color: #c0c0c0
+	transition: all .3s
+	&:hover
+		background: #CF4C3C
 .line
-	background: #6DBF2D
+	background-color: #c0c0c0
+	transition: all .3s
+	&:hover
+		background: #6DBF2D
 .twitter
-	background: #65A2D9
+	background-color: #c0c0c0
+	transition: all .3s
+	&:hover
+		background: #65A2D9
 .mail
-	background: #00466E
+	background-color: #c0c0c0
+	transition: all .3s
+	&:hover
+		background: #00466E
 .download
-	background: #32b396
+	background-color: #c0c0c0
+	transition: all .3sd
+	&:hover
+		background: #32b396
 .print
-	background: #FE6601
+	background-color: #c0c0c0
+	transition: all .3s
+	&:hover
+		background: #FE6601
 .font_zoom
-	background: #F5A623
+	background-color: #c0c0c0
+	transition: all .3som
+	&:hover
+		background: #F5A623
 
-
-
+.icons
+	width: 100%
+	// background: #290
+	display: flex
+	flex-direction: row
+	justify-content: flex-end
+	align-items: center
+	.social_media, .function, .font
+		margin-left: 20px
+		display: flex
+		flex-direction: row
+		justify-content: flex-end
+		align-items: center
+		.i_icon
+			width: 30px
+			height: 30px
+			margin-right: 10px
+			color: #FFF
+			border-radius:  50%
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			cursor: pointer
+			i
+				font-size: 18px
 
 
 
@@ -396,6 +417,62 @@ $susy: (debug: (image: hide))
 			border: 1px solid #eee
 
 
+
+
+.visit_detail
+	+susy-breakpoint($breakpoint_mobile, $mobile)
+		+container
+
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		margin-bottom: 50px
+		.goback
+			font-size: 14px
+			margin-bottom: 20px
+			border-bottom: 1px solid #eee
+			padding-bottom: 10px
+		.t-title
+			margin-bottom: 50px
+			font-size: 26px
+			color: #165779
+			margin-bottom: 10px
+		.t_date
+			margin-bottom: 40px
+			// border: 1px solid #eee
+			border-left: 8px solid #eee
+			padding: 0 10px
+			p
+				font-size: 12px
+				color: #555
+				line-height: 1.6
+		.news_content
+			margin-bottom: 40px
+			p
+				font-size: 14px
+				margin-bottom: 5px
+		.related_link, .file_download
+			padding: 10px
+			margin-top: 15px
+			margin-bottom: 10px
+			color: #888
+			font-size: 14px
+			border: 1px solid #eee
+
+
+
+
+
+
+
+
+
+
+
+
+
 .contact_us
 	+susy-breakpoint($breakpoint_mobile, $mobile)
 		+container
@@ -558,7 +635,8 @@ $susy: (debug: (image: hide))
 	display: block
 	color: #14AFCD
 	padding: 10px 0
-
+	i
+		margin-right: 5px
 
 .pages
 	+susy-breakpoint($breakpoint_mobile, $mobile)
