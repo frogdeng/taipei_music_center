@@ -27,11 +27,177 @@ $susy: (debug: (image: hide))
 .two_column_section
 	+susy-breakpoint($breakpoint_mobile, $mobile)
 		+container
+		padding: 0 20px
+		.news_info
+			+span(6)
+			// background-color: #390
+			margin-bottom: 40px
+			.t-title
+				font-size: 23px
+				color: #696969
+				margin-bottom: 10px
+				img
+					margin-right: 8px
 
+			.news_list
+				border-top: 1px solid #50E3C2
+				// border-bottom: 2px solid #50E3C2
+				padding-top: 20px
+				.news_row
+					margin-bottom: 23px
+					transition: all .3s
+					
+					h6
+						font-size: 17px
+						color: #222
+						margin-bottom: 5px
+					p
+						font-size: 16px
+						overflow : hidden
+						text-overflow : ellipsis
+						white-space : nowrap
+					&:hover
+						h6
+							color: #111
+						p
+							color: #111
+				.moreline
+					height: 2px
+					background: #50E3C2
+					position: relative
+					.more
+						display: block
+						position: absolute
+						padding: 5px 25px
+						// margin-top: -15px
+						border-radius: 30px
+						display: flex
+						flex-direction: row
+						justify-content: center
+						align-items: center
+						background-color: #50E3C2
+						color: #FFF
+						font-size: 14px
+						right: 0
+						top: -15px
+
+		.record_video
+			+span(6)
+			margin-bottom: 20px
+			.t-title
+				font-size: 23px
+				color: #696969
+				margin-bottom: 10px
+				
+				a
+					color: #696969
+					display: block
+					overflow : hidden
+					text-overflow : ellipsis
+					white-space : nowrap
+					img
+						margin-right: 8px
+
+			.video_inside
+				height: 420px
+				iframe
+					width: 100%
+					height: 420px
+
+
+		.slider_ad
+			+span(6)
+			.ad_slider
+				// height: 341px
+
+		.display_space
+			+span(6)
 
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
+		padding: 0 20px
+		.news_info
+			+span(4)
+			// background-color: #390
+			.t-title
+				font-size: 23px
+				color: #696969
+				margin-bottom: 10px
+				img
+					margin-right: 8px
 
+			.news_list
+				border-top: 1px solid #50E3C2
+				// border-bottom: 2px solid #50E3C2
+				padding-top: 20px
+				.news_row
+					margin-bottom: 23px
+					transition: all .3s
+					
+					h6
+						font-size: 17px
+						color: #222
+						margin-bottom: 5px
+					p
+						font-size: 16px
+						overflow : hidden
+						text-overflow : ellipsis
+						white-space : nowrap
+					&:hover
+						h6
+							color: #111
+						p
+							color: #111
+				.moreline
+					height: 2px
+					background: #50E3C2
+					position: relative
+					.more
+						display: block
+						position: absolute
+						padding: 5px 25px
+						// margin-top: -15px
+						border-radius: 30px
+						display: flex
+						flex-direction: row
+						justify-content: center
+						align-items: center
+						background-color: #50E3C2
+						color: #FFF
+						font-size: 14px
+						right: 0
+						top: -15px
+
+		.record_video
+			+span(4)
+			.t-title
+				font-size: 23px
+				color: #696969
+				margin-bottom: 10px
+				
+				a
+					color: #696969
+					display: block
+					overflow : hidden
+					text-overflow : ellipsis
+					white-space : nowrap
+					img
+						margin-right: 8px
+
+			.video_inside
+				height: 420px
+				iframe
+					width: 100%
+					height: 420px
+
+
+		.slider_ad
+			+span(4)
+			.ad_slider
+				// height: 341px
+
+		.display_space
+			+span(4)
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
@@ -48,36 +214,44 @@ $susy: (debug: (image: hide))
 
 			.news_list
 				border-top: 1px solid #50E3C2
-				border-bottom: 2px solid #50E3C2
+				// border-bottom: 2px solid #50E3C2
 				padding-top: 20px
 				.news_row
-					margin-bottom: 25px
+					margin-bottom: 23px
 					transition: all .3s
 					h6
-						font-size: 16px
+						font-size: 17px
 						color: #222
-						margin-bottom: 8px
+						margin-bottom: 5px
 					p
-						font-size: 14px
+						font-size: 16px
+						overflow : hidden
+						text-overflow : ellipsis
+						white-space : nowrap
 					&:hover
 						h6
 							color: #111
 						p
 							color: #111
-				.more
-					display: block
-					padding: 5px 25px
-					margin-top: -15px
-					border-radius: 30px
-					display: flex
-					flex-direction: row
-					justify-content: center
-					align-items: center
-					background-color: #50E3C2
-					color: #FFF
-					font-size: 14px
-					float: right
-
+				.moreline
+					height: 2px
+					background: #50E3C2
+					position: relative
+					.more
+						display: block
+						position: absolute
+						padding: 5px 25px
+						// margin-top: -15px
+						border-radius: 30px
+						display: flex
+						flex-direction: row
+						justify-content: center
+						align-items: center
+						background-color: #50E3C2
+						color: #FFF
+						font-size: 14px
+						right: 0
+						top: -15px
 
 		.record_video
 			+span(6)
@@ -115,11 +289,153 @@ $susy: (debug: (image: hide))
 .show_event
 	+susy-breakpoint($breakpoint_mobile, $mobile)
 		+container
+		padding: 0 20px
+		height: 500px
+		padding-top: 80px
+		.show_tab
+			display: flex
+			flex-direction: row
+			flex-wrap: wrap
+			justify-content: center
+			align-items: center
+			border-bottom: 1px solid #CECECE
+			padding-bottom: 10px
+			padding-left: 15px
+			margin-bottom: 20px
 
+			.show_filter_tab
+				margin-right: 40px
+				margin-bottom: 20px
+				font-size: 18px
+				cursor: pointer
+
+
+		.show_content
+			.show_list-about
+				+span(6)
+				margin-bottom: 30px
+				.show_gogo
+					border-bottom: 1px solid #CECECE
+					margin-bottom: 12px
+					h6
+						font-size: 20px
+						color: #594460
+						margin-bottom: 2px
+					p
+						font-size: 15px
+						color: #888
+						margin-bottom: 5px
+				.show_more
+					display: block
+					width: 100%
+					height: 40px
+					background-color: #222
+					color: #FFF
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					margin-top: 20px
+
+			.show_block
+				+span(6)
+				.show_detail
+					+span(3)
+					margin-bottom: 20px
+					position: relative
+					transition: all .3s
+					overflow: hidden
+					img 
+						display: block
+					.mask
+						position: absolute
+						overflow : hidden
+						text-overflow : ellipsis
+						white-space : nowrap
+						width: 100%
+						height: 30%
+						color: #FFF
+						text-align: center
+						padding: 15px
+						font-size: 14px
+						background: rgba(0,0,0, .8)
+						bottom: 0%
+						left: 0
+						transition: all .3s
 
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
+		padding: 0 20px
+		height: 500px
+		padding-top: 80px
+		.show_tab
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			border-bottom: 1px solid #CECECE
+			padding-bottom: 10px
+			padding-left: 15px
+			margin-bottom: 20px
 
+			.show_filter_tab
+				margin-right: 40px
+				font-size: 18px
+				cursor: pointer
+
+
+		.show_content
+			.show_list-about
+				+span(3)
+				.show_gogo
+					border-bottom: 1px solid #CECECE
+					margin-bottom: 12px
+					h6
+						font-size: 20px
+						color: #594460
+						margin-bottom: 2px
+					p
+						font-size: 15px
+						color: #888
+						margin-bottom: 5px
+				.show_more
+					display: block
+					width: 100%
+					height: 40px
+					background-color: #222
+					color: #FFF
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					margin-top: 20px
+
+			.show_block
+				+span(5)
+				.show_detail
+					+span(4)
+					margin-bottom: 20px
+					position: relative
+					transition: all .3s
+					overflow: hidden
+					img 
+						display: block
+					.mask
+						position: absolute
+						overflow : hidden
+						text-overflow : ellipsis
+						white-space : nowrap
+						width: 100%
+						height: 25%
+						color: #FFF
+						text-align: center
+						padding: 15px
+						font-size: 14px
+						background: rgba(0,0,0, .8)
+						bottom: 0%
+						left: 0
+						transition: all .3s
+				
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
@@ -208,10 +524,103 @@ $susy: (debug: (image: hide))
 .performance_hall
 	+susy-breakpoint($breakpoint_mobile, $mobile)
 		+container
+		padding: 0 20px
+		margin-bottom: 50px
+		.hall_left
+			+span(6)
+			margin-bottom: 30px
+			.hall-l
+				position: relative
+				width: 100%
+				img
+					display: block
+					width: 100%
+				.t-des
+					position: absolute
+					top: 0
+					padding: 20px
 
+					h6
+						font-size: 20px
+						color: #FFF
+						font-weight: 700
+					p
+						color: #FFF
+						font-size: 14px
+
+		.hall_right
+			+span(6)
+			.hall-s
+				margin-bottom: 10px
+				position: relative
+				overflow: hidden
+				background-color: #718
+				img
+					display: block
+
+				.t-des
+					position: absolute
+					bottom: 0px
+					padding: 20px
+					background: rgba(100,143,150, .8)
+
+					h6
+						font-size: 18px
+						color: #FFF
+						font-weight: 700
+					p
+						color: #FFF
+						font-size: 12px
 
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
+		padding: 0 20px
+		margin-bottom: 50px
+		.hall_left
+			+span(4)
+			margin-bottom: 30px
+			.hall-l
+				position: relative
+				width: 100%
+				img
+					display: block
+					width: 100%
+				.t-des
+					position: absolute
+					top: 0
+					padding: 20px
+
+					h6
+						font-size: 18px
+						color: #FFF
+						font-weight: 700
+					p
+						color: #FFF
+						font-size: 12px
+		.hall_right
+			+span(4)
+			.hall-s
+				margin-bottom: 10px
+				position: relative
+				overflow: hidden
+				background-color: #718
+				img
+					display: block
+
+				.t-des
+					position: absolute
+					bottom: 0px
+					padding: 20px
+					background: rgba(100,143,150, .8)
+
+
+					h6
+						font-size: 18px
+						color: #FFF
+						font-weight: 700
+					p
+						color: #FFF
+						font-size: 12px
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
@@ -237,8 +646,6 @@ $susy: (debug: (image: hide))
 					p
 						color: #FFF
 						font-size: 14px
-
-
 
 		.hall_right
 			+span(6)
@@ -270,18 +677,92 @@ $susy: (debug: (image: hide))
 .show_schedule
 	+susy-breakpoint($breakpoint_mobile, $mobile)
 		+container
-
+		// padding: 0 20px
+		width: 100%
+		margin-bottom: 30px
+		overflow: hidden
+		.date_list
+			width: 100%
+			margin-top: 0px
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			.date_unit
+				width: 50px
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				background: #eee
+				transition: all .2s
+				.week
+					width: 50px
+					height: 25px
+					font-size: 11px
+					display: flex
+					flex-direction: column
+					justify-content: center
+					align-items: center
+					border: 1px solid #FFF
+				.date
+					width: 50px
+					height: 30px
+					font-size: 11px
+					display: flex
+					flex-direction: column
+					justify-content: center
+					align-items: center
+					border: 1px solid #FFF
 
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
-
+		// padding: 0 20px
+		width: 100%
+		margin-bottom: 30px
+		overflow: hidden
+		.date_list
+			width: 100%
+			margin-top: 0px
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			.date_unit
+				width: 50px
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				background: #eee
+				transition: all .2s
+				.week
+					width: 50px
+					height: 25px
+					font-size: 11px
+					display: flex
+					flex-direction: column
+					justify-content: center
+					align-items: center
+					border: 1px solid #FFF
+				.date
+					width: 50px
+					height: 30px
+					font-size: 11px
+					display: flex
+					flex-direction: column
+					justify-content: center
+					align-items: center
+					border: 1px solid #FFF
+				
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
 		width: 100%
 		margin-bottom: 30px
+		// background: #209
 		.date_list
 			width: 100%
-			margin-top: 60px
+			margin-top: 0px
 			display: flex
 			flex-direction: row
 			justify-content: flex-start

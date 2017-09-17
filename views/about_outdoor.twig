@@ -1,0 +1,70 @@
+{# index.twig #}
+{% extends "/_template/layout.twig" %}
+
+
+
+{% block page %}
+
+
+{% include '_partial/inside_hero.twig' %}
+
+<div class="bread_crumbs">
+	<div class="bread_crumbs_div"><a href="">首頁 </a> > <a href="">公告資訊 </a> > <p>招標公告</p></div>
+
+	{% include '_partial/icons.twig' %}
+
+</div>
+
+
+
+<div class="page_w">
+
+	<!-- notice_tab -->
+	<div class="page_tab">
+		<div class="aside_menu">
+			<ul>
+				<li ><a href=""><i class="fa fa-newspaper-o" aria-hidden="true"></i> 北流簡介</a></li>
+				<li ><a href=""><i class="fa fa-newspaper-o" aria-hidden="true"></i>表演廳</a></li>
+				<li ><a href=""><i class="fa fa-newspaper-o" aria-hidden="true"></i> 流行音樂文化館</a></li>
+				<li ><a href=""><i class="fa fa-newspaper-o" aria-hidden="true"></i> 產業區</a></li>
+				<li class="onpage"><i class="fa fa-newspaper-o" aria-hidden="true"></i> 戶外展演區</li>
+				<li ><a href=""><i class="fa fa-newspaper-o" aria-hidden="true"></i> 北流大事紀</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+
+
+	<!-- page_contnet -->
+	<div class="page_contnet">
+
+			<div class="about_detail">
+			<div class="t-title">戶外展演區</div>
+				
+			<div class="about_content">
+				<img src="img/about_07.jpg" alt="">	
+				<p>戶外音樂廣場位於流行音樂文化館與產業區之間，佔地長100公尺，寬約35公尺，為一可容納約3,000人之戶外音樂舞臺，廣場四週另有大片綠地及樹木植栽，與北基地東側廣場的戶外景觀區串聯，無演出場次時，可做為一般大眾休閒遊憩場所，增加休憩功能性，強化流行音樂中心公共空間的屬性特色，拉近與民眾的距離，提升來客率。假日節慶可成為舉辦創意市集、綠色市場、音樂饗宴、街頭表演等各類型活動，必要時亦可做音量控管，舉辦大型音樂節目。</p>
+
+				<img src="img/about_0.jpg" alt="">	
+
+			</div>
+
+			
+			
+		</div>
+
+		{% include '_partial/icons.twig' %}
+
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,105 @@
+{# index.twig #}
+{% extends "/_template/layout.twig" %}
+
+
+
+{% block page %}
+
+
+{% include '_partial/inside_hero.twig' %}
+
+<div class="bread_crumbs">
+	<div class="bread_crumbs_div"><a href="">首頁 </a> > <a href="">公告資訊 </a> > <p>招標公告</p></div>
+
+	{% include '_partial/icons.twig' %}
+
+</div>
+
+
+
+<div class="page_w">
+
+	<!-- notice_tab -->
+	<div class="page_tab">
+		<div class="aside_menu">
+			<ul>
+				<li class="onpage"> <i class="fa fa-newspaper-o" aria-hidden="true"></i> 開放時間</li>
+				<li ><a href=""><i class="fa fa-newspaper-o" aria-hidden="true"></i> 交通與停車</a></li>
+				<li ><a href=""><i class="fa fa-newspaper-o" aria-hidden="true"></i> 票價資訊</a></li>
+				<li ><a href=""><i class="fa fa-newspaper-o" aria-hidden="true"></i> 餐飲及商店</a></li>
+				<li ><a href=""><i class="fa fa-newspaper-o" aria-hidden="true"></i> 全區地圖</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<!-- page_contnet -->
+	<div class="page_contnet">
+
+			<div class="visit_detail">
+			<div class="t-title">開放時間</div>
+				
+			<div class="visit_content">
+				<div class="div_talbe">
+					<table>
+						<tr>
+							<td width="30%"><b>北基地</b></td>
+							<td width="70%"><b>開放時間</b></td>
+						
+						</tr>
+						<tr>
+							<td class="orange">表演廳</td>
+							<td>09:00~22:00(視本館活動時間另行調整)</td>
+						</tr>
+					</table>	
+				</div>
+				<br>
+				<div class="div_talbe">
+					<table>
+						<tr>
+							<td width="30%"><b>南基地</b></td>
+							<td width="70%"><b>開放時間</b></td>
+						
+						</tr>
+						<tr>
+							<td class="orange">流行音樂文化館</td>
+							<td>平日 / 9:00~17:00(16:30截止入場) <br>
+								例假日 / 9:00~18:00(17:00截止入場) <br>
+								除夕、每週一休館；逢國定假日或連續假期照常開館</td>
+						</tr>		
+						<tr>
+							<td class="orange">產業區</td>
+							<td>平日 /9:00~17:00  <br>
+								例假日/9:00~18:00 <br>
+								每週一公休，逢國定假日照常營業</td>
+						</tr>
+						<tr>
+							<td class="orange">戶外展演區</td>
+							<td>開放時間：全日開放</td>
+						</tr>
+
+
+
+
+					</table>	
+				</div>
+			</div>
+
+			
+			
+		</div>
+
+		{% include '_partial/icons.twig' %}
+
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+{% endblock %}

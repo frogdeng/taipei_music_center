@@ -390,10 +390,9 @@ $susy: (debug: (image: hide))
 			border-bottom: 1px solid #eee
 			padding-bottom: 10px
 		.t-title
-			margin-bottom: 50px
 			font-size: 26px
 			color: #165779
-			margin-bottom: 10px
+			margin-bottom: 20px
 		.t_date
 			margin-bottom: 40px
 			// border: 1px solid #eee
@@ -407,7 +406,8 @@ $susy: (debug: (image: hide))
 			margin-bottom: 40px
 			p
 				font-size: 14px
-				margin-bottom: 5px
+				margin-bottom: 8px
+
 		.related_link, .file_download
 			padding: 10px
 			margin-top: 15px
@@ -435,32 +435,132 @@ $susy: (debug: (image: hide))
 			border-bottom: 1px solid #eee
 			padding-bottom: 10px
 		.t-title
-			margin-bottom: 50px
+			// padding: 0 20px
 			font-size: 26px
 			color: #165779
-			margin-bottom: 10px
-		.t_date
-			margin-bottom: 40px
-			// border: 1px solid #eee
-			border-left: 8px solid #eee
-			padding: 0 10px
+			margin-bottom: 20px
+	
 			p
 				font-size: 12px
 				color: #555
 				line-height: 1.6
-		.news_content
-			margin-bottom: 40px
+		.visit_content
+			margin-bottom: 60px
+			h6 
+				color: #222
+				font-size: 16px
+				margin-bottom: 5px
+				margin-top: 15px
 			p
 				font-size: 14px
-				margin-bottom: 5px
-		.related_link, .file_download
-			padding: 10px
-			margin-top: 15px
-			margin-bottom: 10px
-			color: #888
-			font-size: 14px
-			border: 1px solid #eee
+				margin-bottom: 8px
+			.div_talbe
+				width: 100%
+				margin-top: 20px
+				margin-bottom: 20px
+				table
+					width: 100%
+					tr
+						border-bottom: 1px solid #e0e0e0
+						th 
+							font-size: 15px
+							color: #222
+							padding: 8px 5px
+							// background: #2819
+						td 
+							font-size: 14px
+							color: #888
+							padding: 8px 5px
 
+		
+.orange
+	color: #DE8B00 !important
+
+
+
+.about_detail
+	+susy-breakpoint($breakpoint_mobile, $mobile)
+		+container
+
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		margin-bottom: 50px
+		.goback
+			font-size: 14px
+			margin-bottom: 20px
+			border-bottom: 1px solid #eee
+			padding-bottom: 10px
+		.t-title
+			// padding: 0 20px
+			font-size: 26px
+			color: #165779
+			margin-bottom: 20px
+	
+			p
+				font-size: 12px
+				color: #555
+				line-height: 1.6
+			
+
+		.about_content
+			margin-bottom: 60px
+			.photo_des
+				font-size: 13px
+				margin-top: -20px
+				margin-bottom: 30px
+			img 
+				margin-bottom: 20px
+				margin-top: 20px
+			h6 
+				color: #222
+				font-size: 16px
+				margin-bottom: 8px
+				margin-top: 15px
+			p
+				font-size: 14px
+				margin-bottom: 8px
+			a 
+				display: block
+				margin-bottom: 10px
+				color: #888
+				font-size: 14px
+				&:hover
+					color: #222
+			.qa
+				border-bottom: 1px solid #eee
+				padding-bottom: 20px
+				.question
+					margin-bottom: 10px
+					margin-top: 20px
+				.answer
+					a
+						display: inline-table
+						color: #01aecc
+
+			.list_l
+				display: flex
+				flex-direction: row
+				justify-content: flex-start
+				align-items: flex-start
+				margin-bottom: 14px
+				padding-bottom: 14px
+				border-bottom: 1px solid #eee
+				transition: all .2s
+				.a-date
+					margin-right: 40px
+					font-size: 16px
+					color: #222
+					transition: all .2s
+				.a-des
+					font-size: 16px
+					color: #888
+					transition: all .2s
+				&:hover
+					.a-des
+						color: #555
 
 
 

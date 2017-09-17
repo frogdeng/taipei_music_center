@@ -1,0 +1,58 @@
+{# index.twig #}
+{% extends "/_template/layout.twig" %}
+
+{% block page %}
+
+{% include '_partial/inside_hero.twig' %}
+<div class="bread_crumbs">
+	<div class="bread_crumbs_div"><a href="">首頁 </a> >  <p>網站導覽 </p></div>
+
+	{% include '_partial/icons.twig' %}
+</div>
+
+
+
+
+<div class="page_w">
+
+	<!-- notice_tab -->
+	<div class="page_tab">
+		<div class="aside_menu">
+			<ul>
+				<li class="onpage"><i class="fa fa-newspaper-o" aria-hidden="true"></i> RSS訂閱</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<!-- page_contnet -->
+	<div class="page_contnet">
+
+		<div class="about_detail">
+			<div class="t-title">何謂 RSS?</div>
+				
+			<div class="about_content">
+				<p>RSS 為內容出版者提供了一種能以標準化格式來散佈資訊的便利方式。標準化的 XML 檔案格式只需要發佈資訊一次，就能經由許多不同的程式 (例如 Outlook) 來檢視。RSS 內容的常見範例是經常更新的新聞標題等資訊來源。</p>
+				<p>RSS 的優點在於，它能將來自諸多 Web 來源的所有內容匯聚於同一位置。也就是說，再也不用分別造訪不同的網站，就能針對感興趣的主題取得最新資訊。在 RSS 的協助下，您將會收到內容的摘要，再以按一下連結的方式來決定想要閱讀哪些文章。</p>
+				<p>RSS 內容通常是以文字為基礎，出版者包括各式各樣的來源，但主要是媒體出口或個人網誌 (又稱「部落格」)。您可以將部落格想成是線上日誌。隨著 RSS 受歡迎的程度逐漸上升，各種最新類型的內容也在不斷出現，包括以多媒體為基礎的內容。這類內容的共享過程稱為部落格廣播 (Blogcast) 或 Podcast 廣播。例如，部份媒體出口會為它們的個別新聞報導提供語音版本。</p>
+				<p>RSS 內容的傳送機制稱為「RSS 摘要」。共有數百萬個 RSS 摘要是由標題或簡短的內容摘要所構成的，並提供一個指向原始來源的連結。不過摘要也可以包含完整的內容，以及絕大多數類型的附件。RSS 摘要的別名包括 Web 摘要、XML 摘要、RSS 頻道和聚合內容 (Syndicated Content) 等。</p>
+				<p>大部份人均會利用某種形式的用戶端軟體程式來讀取 RSS 摘要。這些程式稱為 RSS 彙總器或 RSS 讀取器。Outlook 即內含 RSS 彙總器的功能。</p>
+
+			</div>
+
+			
+			
+		</div>
+	</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,83 @@
+{# index.twig #}
+{% extends "/_template/layout.twig" %}
+
+{% block page %}
+
+{% include '_partial/inside_hero.twig' %}
+<div class="bread_crumbs">
+	<div class="bread_crumbs_div"><a href="">首頁 </a> >  <p>網站導覽</p></div>
+
+	{% include '_partial/icons.twig' %}
+</div>
+
+
+
+
+<div class="page_w">
+
+	<!-- notice_tab -->
+	<div class="page_tab">
+		<div class="aside_menu">
+			<ul>
+				<li class="onpage"><i class="fa fa-newspaper-o" aria-hidden="true"></i> 常見問答</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<!-- page_contnet -->
+	<div class="page_contnet">
+
+		<div class="about_detail">
+			<div class="t-title">常見問答</div>
+				
+			<div class="about_content">
+
+				<div class="qa">
+					<div class="question">如何到達北部流行音樂中心？</div>
+					<div class="answer">
+						<p>北部流行音樂中心</p>
+						<p>地址：南港路二段71號</p>
+						<p>西側臨捷運昆陽站（距離約200公尺），東側接近捷運、台鐵、高鐵等三鐵共構之南港車站（距離約300公尺）。</p>
+						<p>詳細交通資訊，請參考<a href=""></a></p>
+					</div>
+				</div>
+
+				<div class="qa">
+					<div class="question">營業時間？</div>
+					<div class="answer">
+						<a href="">請參考開放時間</a>
+					</div>
+				</div>
+				<div class="qa">
+					<div class="question">當我在館區內拾得或遺失東西時，該怎麼辦？</div>
+					<div class="answer">
+					<p>拾得時 :</p>
+					<p>1. 您可以交給就近的工作人員，他們會轉送至服務中心廣播處理或通知失主前往領取。</p>
+					<p>2. 您也可以送至服務中心，並填寫相關資料或不具名登記 (當此物品依法公告六個月後仍無人認 領，將通知拾得人領取 )。</p>
+					<p>遺失時 :</p>
+					<p>1. 可親自到服務中心登記，將遺失物的名稱、品牌、顏色等相關特徵詳細說明清楚，留下聯絡資料，由遊客服務中心廣播協尋。</p>
+					<p>2. 遊客服務中心若尋獲該遺失物，將以電話通知領取相關事宜。本館網站另提供一個月內遺失物資料查詢。</p></div>
+				</div>		
+				
+
+
+
+			</div>
+
+			
+			
+		</div>
+	</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+{% endblock %}
