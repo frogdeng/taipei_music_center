@@ -65,10 +65,75 @@ $susy: (debug: (image: hide))
 .show_filter
 	+susy-breakpoint($breakpoint_mobile, $mobile)
 		+container
+		padding: 0 20px
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		align-items: center
+		border-bottom: 1px solid #CECECE
+		padding-bottom: 20px
+		margin-bottom: 30px
+		.div_input
+			width: 100%
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			font-size: 16px
+			margin-bottom: 20px
+			select
+				display: block
+				width: 60%
+				height: 40px
+				margin-left: 10px
+				padding: 10px
+				font-size: 14px 
+				color: #999
+				background-color: #fff
+				border: 1px solid #01AECC
+				border-radius: 0
+				outline: none
+				-webkit-appearance: none
+				-moz-appearance: none
+				background: url(../img/aorrow_down.png) no-repeat right 16px
+
 
 
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
+		padding: 0 20px
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		border-bottom: 1px solid #CECECE
+		padding-bottom: 20px
+		margin-bottom: 30px
+		.div_input
+			width: 40%
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			font-size: 16px
+			margin-bottom: 0px
+
+			select
+				display: block
+				width: 60%
+				height: 40px
+				margin-left: 10px
+				padding: 10px
+				font-size: 14px 
+				color: #999
+				background-color: #fff
+				border: 1px solid #01AECC
+				border-radius: 0
+				outline: none
+				-webkit-appearance: none
+				-moz-appearance: none
+				background: url(../img/aorrow_down.png) no-repeat right 16px
+
 
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
@@ -88,6 +153,7 @@ $susy: (debug: (image: hide))
 			justify-content: flex-start
 			align-items: center
 			font-size: 16px
+			margin-bottom: 0px
 			select
 				display: block
 				width: 60%
@@ -112,13 +178,57 @@ $susy: (debug: (image: hide))
 .show_list
 	+susy-breakpoint($breakpoint_mobile, $mobile_show)
 		+container
+		padding: 0 20px
+		// height: 600px
+		margin-bottom: 50px
+		.show_list_title
+			font-size: 20px
+			color: #888
+			margin-bottom: 20px
+		.show_detail
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: flex-start
+			.show_list_column
+				+span(6)
+				position: relative
+				// background: #eee
+				.show_item
+					margin-bottom: 45px
+					img
+						width: 100%
+						margin-bottom: 3px 
+					h6 
+						font-size: 16px
+						font-weight: 300
+						line-height: 1.4
+						color: #222
+					.date
+						font-size: 20px
+						color: #01AECC
+						font-weight: 500
+				&::after 
+					content: ""
+					display: none
+					position: absolute
+					height: 100%
+					width: 1px
+					background: #eee
+					z-index: 2000
+					top: 0
+					right: -20px
+			.show_list_column:nth-last-child(1)
+				&::after 
+					content: ""
+					display: none
 
+			.l-show-l
+				width: 42px
+				margin: 0 0px
+				background: #eee
 
 	+susy-breakpoint($breakpoint_pad, $pad_show)
-		+container
-		
-
-	+susy-breakpoint($breakpoint_desktop, $desktop_show)
 		+container
 		padding: 0 20px
 		// height: 600px
@@ -164,6 +274,57 @@ $susy: (debug: (image: hide))
 					content: ""
 					display: none
 
+			.l-show-l
+				width: 42px
+				margin: 0 0px
+				background: #eee
+
+	+susy-breakpoint($breakpoint_desktop, $desktop_show)
+		+container
+		padding: 0 20px
+		// height: 600px
+		margin-bottom: 50px
+		.show_list_title
+			font-size: 20px
+			color: #888
+			margin-bottom: 20px
+		.show_detail
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: flex-start
+			.show_list_column
+				+span(3.8)
+				position: relative
+				// background: #eee
+				.show_item
+					margin-bottom: 45px
+					img
+						margin-bottom: 3px 
+					h6 
+						font-size: 16px
+						font-weight: 300
+						line-height: 1.4
+						color: #222
+					.date
+						font-size: 20px
+						color: #01AECC
+						font-weight: 500
+				&::after 
+					content: ""
+					display: block
+					position: absolute
+					height: 100%
+					width: 1px
+					background: #eee
+					z-index: 2000
+					top: 0
+					right: -30px
+			.show_list_column:nth-last-child(1)
+				&::after 
+					content: ""
+					display: none
+
 
 			.l-show-l
 				width: 42px
@@ -179,11 +340,163 @@ $susy: (debug: (image: hide))
 .show_detail_page
 	+susy-breakpoint($breakpoint_mobile, $mobile)
 		+container
+		padding: 0 20px
+		margin-bottom: 50px
+		.show_species
+			padding: 0 30px
+			margin-bottom: 30px
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			.species
+				width: 120px
+				height: 30px
+				border-radius: 50px
+				border: 1px solid #d28f5a
+				font-size: 14px
+				color: #d28f5a
+				margin-right: 20px
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				i 
+					margin-right: 5px
 
+		.performance_info
+			+span(6)
+			padding: 0 20px
+			margin-bottom: 50px
+			.t-title
+				font-size: 23px
+				color: #222
+				line-height: 1.3
+				font-weight: 700
+				padding-bottom: 20px
+				border-bottom: 1px solid #e0e0e0
+			.performance_ticket
+				border-bottom: 1px solid #e0e0e0
+				padding: 13px 10px
+				margin-bottom: 10px
+				display: flex
+				flex-direction: row
+				justify-content: flex-start
+				align-items: flex-start
+				.ticket_t
+					width: 60%
+					font-size: 18px
+					color: #222
+					font-weight: 500
+				.ticket_species
+					width: 50%
+					p 
+						font-size: 14px
+						margin-bottom: 7px
+						font-weight: 500
+						color: #888
+			.performance_summary
+				padding: 13px 10px
+				border-bottom: 1px solid #e0e0e0
+				p 
+					font-size: 14px
+					margin-bottom: 7px
+					font-weight: 500
+					color: #888
+
+		.performance_description
+			+span(6)
+			padding: 0 20px
+			margin-bottom: 50px
+			p 
+				font-size: 14px
+				line-height: 1.6
+				margin-bottom: 10px
+				font-weight: 300
+
+			img
+				width: 100%
+				margin-bottom: 10px
 
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
-		
+		padding: 0 20px
+		margin-bottom: 50px
+		.show_species
+			padding: 0 30px
+			margin-bottom: 30px
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			.species
+				width: 120px
+				height: 30px
+				border-radius: 50px
+				border: 1px solid #d28f5a
+				font-size: 14px
+				color: #d28f5a
+				margin-right: 20px
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				i 
+					margin-right: 5px
+
+		.performance_info
+			+span(3)
+			padding: 0 20px
+			margin-bottom: 50px
+			.t-title
+				font-size: 23px
+				color: #222
+				line-height: 1.3
+				font-weight: 700
+				padding-bottom: 20px
+				border-bottom: 1px solid #e0e0e0
+			.performance_ticket
+				border-bottom: 1px solid #e0e0e0
+				padding: 13px 10px
+				margin-bottom: 10px
+				display: flex
+				flex-direction: row
+				justify-content: flex-start
+				align-items: flex-start
+				.ticket_t
+					width: 60%
+					font-size: 18px
+					color: #222
+					font-weight: 500
+				.ticket_species
+					width: 50%
+					p 
+						font-size: 14px
+						margin-bottom: 7px
+						font-weight: 500
+						color: #888
+			.performance_summary
+				padding: 13px 10px
+				border-bottom: 1px solid #e0e0e0
+				p 
+					font-size: 14px
+					margin-bottom: 7px
+					font-weight: 500
+					color: #888
+
+		.performance_description
+			+span(5)
+			padding: 0 20px
+			margin-bottom: 50px
+			p 
+				font-size: 14px
+				line-height: 1.6
+				margin-bottom: 10px
+				font-weight: 300
+
+			img
+				width: 100%
+				margin-bottom: 10px
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container

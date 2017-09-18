@@ -428,11 +428,133 @@ a
 .main_image_insidepage
 	+susy-breakpoint($breakpoint_mobile, $w_mobile)
 		+container
-
+		margin-bottom: 40px
+		position: relative
+		.main_slider
+			height: 300px
+			background: url(../img/inside-keyimage_a1.jpg) bottom
+			background-size: cover
+			.new_photo
+				width: 100%
+				img
+					width: 100%
+		.logo
+			position: absolute
+			width: 250px
+			left: 70px
+			top: 20px
+			z-index: 1100
+		.deskmenu
+			display: none
+		.hamburg
+			display: block
+			position: absolute
+			height: 40px
+			width: 40px
+			// background: #555
+			top: 15px
+			right: 10px
+			cursor: pointer
+			z-index: 1800
+		.aside
+			display: block
+			position: fixed
+			width: 100%
+			height: 2000px
+			background: rgba(0,0,0, .8)
+			padding-top: 50px
+			transition: all .2s ease
+			right: -100%
+			top: -30px
+			z-index: 1200
+			overflow-x: hidden
+			ul
+				margin-top: 60px
+				li
+					.m-first 
+						display: flex
+						justify-content: space-between
+						align-items: center
+						height: 50px	
+						width: 100%
+						padding: 0 0 0 30px
+						line-height: 1.4
+						color: #FFF
+						font-size: 16px
+						font-weight: 700
+						border-bottom: 1px solid #555
+						.go_submenu
+							width: 45px
+							height: 45px
+							background: #222
+							display: flex
+							justify-content: center
+							align-items: center
+							i 
+								font-size: 30px
+					.m-second_bg
+						position: absolute
+						width: 100%
+						height: 2000px
+						background: #222
+						top: 110px
+						right: -100%
+						transition: all .5s ease
+						.goback
+							margin: 0 10px
+							color: #FFF
+							width: 200px
+							height: 48px
+							margin-top: -20px
+							margin-left: 20px
+							padding-left: 20px
+							cursor: pointer
+							background-color: #555
+							// border: 1px solid #444
+							display: flex
+							justify-content: flex-start
+							align-items: center
+							i 
+								font-size: 20px
+								margin-right: 10px
+						ul
+							position: absolute
+							width: 100%
+							top: -20px
+							li
+								.m-second
+									display: block
+									height: 50px	
+									width: 100%
+									padding: 0 0 0 30px
+									line-height: 1.4
+									color: #c0c0c0
+									font-size: 15px
+									border-bottom: 1px solid #555
+									display: flex
+									justify-content: flex-start
+									align-items: center
 
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
-
+		margin-bottom: 40px
+		position: relative
+		.main_slider
+			height: 300px
+			background: url(../img/inside-keyimage_a1.jpg) bottom
+			background-size: cover
+			.new_photo
+				width: 100%
+				img
+					width: 100%
+		.logo
+			position: absolute
+			width: 250px
+			left: 70px
+			top: 20px
+			z-index: 1100
+		.deskmenu
+			display: none
 
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
@@ -452,6 +574,8 @@ a
 			left: 70px
 			top: 20px
 			z-index: 1100
+		.hamburg
+			display: none
 		.deskmenu
 			position: absolute
 			width: 900px
