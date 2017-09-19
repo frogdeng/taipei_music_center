@@ -2285,6 +2285,8 @@ a {
     font-size: 16px;
     color: #888;
     transition: all .2s; }
+  .notice_list .list_l .a-des i {
+    margin-right: 5px; }
   .notice_list .list_l:hover .a-des {
     color: #555; } }
 
