@@ -318,7 +318,7 @@ $susy: (debug: (image: hide))
 					border-bottom: 1px solid #CECECE
 					margin-bottom: 12px
 					h6
-						font-size: 20px
+						font-size: 17px
 						color: #594460
 						margin-bottom: 2px
 					p
@@ -389,9 +389,9 @@ $susy: (debug: (image: hide))
 				+span(3)
 				.show_gogo
 					border-bottom: 1px solid #CECECE
-					margin-bottom: 12px
+					margin-bottom: 23px
 					h6
-						font-size: 20px
+						font-size: 18px
 						color: #594460
 						margin-bottom: 2px
 					p
@@ -414,6 +414,7 @@ $susy: (debug: (image: hide))
 				+span(5)
 				.show_detail
 					+span(4)
+					height: 160px
 					margin-bottom: 20px
 					position: relative
 					transition: all .3s
@@ -426,12 +427,12 @@ $susy: (debug: (image: hide))
 						text-overflow : ellipsis
 						white-space : nowrap
 						width: 100%
-						height: 25%
+						height: 45%
 						color: #FFF
 						text-align: center
 						padding: 15px
 						font-size: 14px
-						background: rgba(0,0,0, .8)
+						background: rgba(0,0,0, .6)
 						bottom: 0%
 						left: 0
 						transition: all .3s
@@ -463,15 +464,19 @@ $susy: (debug: (image: hide))
 				+span(3)
 				.show_gogo
 					border-bottom: 1px solid #CECECE
-					margin-bottom: 12px
+					margin-bottom: 16px
 					h6
-						font-size: 20px
+						font-size: 18px
 						color: #594460
 						margin-bottom: 2px
 					p
 						font-size: 15px
 						color: #888
 						margin-bottom: 5px
+						overflow: hidden
+						text-overflow: ellipsis
+						white-space: nowrap
+
 				.show_more
 					display: block
 					width: 100%
@@ -488,12 +493,18 @@ $susy: (debug: (image: hide))
 				+span(9)
 				.show_detail
 					+span(4)
+					height: 230px
+					background: #222
 					margin-bottom: 20px
 					position: relative
 					transition: all .3s
 					overflow: hidden
-					img 
-						display: block
+					a
+						img 
+							display: block
+							position: absolute
+							top: 23px
+							transform: scale(1.23)
 					.mask
 						position: absolute
 						width: 100%
@@ -507,6 +518,7 @@ $susy: (debug: (image: hide))
 						left: 0
 						transition: all .3s
 					&:hover
+						transform: scale(1.05)
 						.mask
 							bottom: -50%
 							left: 0
