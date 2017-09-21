@@ -1545,6 +1545,8 @@ a {
     margin-bottom: 30px;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -ms-flex-direction: row;
     flex-direction: row;
     -ms-flex-pack: start;
@@ -1552,13 +1554,14 @@ a {
     -ms-flex-align: center;
     align-items: center; }
   .show_detail_page .show_species .species {
-    width: 120px;
+    width: 110px;
     height: 30px;
     border-radius: 50px;
     border: 1px solid #d28f5a;
     font-size: 14px;
     color: #d28f5a;
     margin-right: 20px;
+    margin-bottom: 10px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
@@ -1615,6 +1618,10 @@ a {
     margin-bottom: 7px;
     font-weight: 500;
     color: #888; }
+  .show_detail_page .performance_info .performance_summary p span {
+    font-weight: 700;
+    color: #222;
+    margin-right: 10px; }
   .show_detail_page .performance_description {
     width: 97.61905%;
     float: left;
@@ -1839,21 +1846,57 @@ a {
   .others_show {
     max-width: 630px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    margin-bottom: 100px; }
   .others_show:after {
     content: " ";
     display: block;
-    clear: both; } }
+    clear: both; }
+  .others_show .t-title {
+    margin: 0 20px;
+    font-size: 20px;
+    color: #696969;
+    margin-bottom: 10px; }
+  .others_show .moreShow_photo {
+    margin: 0 20px; }
+  .others_show .moreShow_photo img {
+    margin-bottom: 5px; }
+  .others_show .moreShow_photo h6 {
+    font-size: 14px;
+    color: #222; }
+  .others_show .moreShow_photo p {
+    font-size: 12px;
+    color: #888; }
+  .others_show .slick-prev:before, .others_show .slick-next:before {
+    color: #999; } }
 
 @media (min-width: 767px) {
   .others_show {
     max-width: 880px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    margin-bottom: 100px; }
   .others_show:after {
     content: " ";
     display: block;
-    clear: both; } }
+    clear: both; }
+  .others_show .t-title {
+    margin: 0 20px;
+    font-size: 20px;
+    color: #696969;
+    margin-bottom: 10px; }
+  .others_show .moreShow_photo {
+    margin: 0 20px; }
+  .others_show .moreShow_photo img {
+    margin-bottom: 5px; }
+  .others_show .moreShow_photo h6 {
+    font-size: 14px;
+    color: #222; }
+  .others_show .moreShow_photo p {
+    font-size: 12px;
+    color: #888; }
+  .others_show .slick-prev:before, .others_show .slick-next:before {
+    color: #999; } }
 
 @media (min-width: 979px) {
   .others_show {
@@ -1866,6 +1909,7 @@ a {
     display: block;
     clear: both; }
   .others_show .t-title {
+    margin: 0 20px;
     font-size: 20px;
     color: #696969;
     margin-bottom: 10px; }

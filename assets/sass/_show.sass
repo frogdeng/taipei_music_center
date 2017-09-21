@@ -346,17 +346,19 @@ $susy: (debug: (image: hide))
 			padding: 0 30px
 			margin-bottom: 30px
 			display: flex
+			flex-wrap: wrap
 			flex-direction: row
 			justify-content: flex-start
 			align-items: center
 			.species
-				width: 120px
+				width: 110px
 				height: 30px
 				border-radius: 50px
 				border: 1px solid #d28f5a
 				font-size: 14px
 				color: #d28f5a
 				margin-right: 20px
+				margin-bottom: 10px
 				display: flex
 				flex-direction: row
 				justify-content: center
@@ -403,6 +405,10 @@ $susy: (debug: (image: hide))
 					margin-bottom: 7px
 					font-weight: 500
 					color: #888
+					span
+						font-weight: 700
+						color: #222
+						margin-right: 10px
 
 		.performance_description
 			+span(6)
@@ -582,16 +588,51 @@ $susy: (debug: (image: hide))
 .others_show
 	+susy-breakpoint($breakpoint_mobile, $mobile)
 		+container
-
+		margin-bottom: 100px
+		.t-title
+			margin: 0 20px
+			font-size: 20px
+			color: #696969
+			margin-bottom: 10px
+		.moreShow_photo
+			margin: 0 20px
+			img 
+				margin-bottom: 5px
+			h6 
+				font-size: 14px
+				color: #222
+			p 
+				font-size: 12px
+				color: #888
+		.slick-prev:before, .slick-next:before
+			color: #999
 
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
-		
+		margin-bottom: 100px
+		.t-title
+			margin: 0 20px
+			font-size: 20px
+			color: #696969
+			margin-bottom: 10px
+		.moreShow_photo
+			margin: 0 20px
+			img 
+				margin-bottom: 5px
+			h6 
+				font-size: 14px
+				color: #222
+			p 
+				font-size: 12px
+				color: #888
+		.slick-prev:before, .slick-next:before
+			color: #999
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
 		margin-bottom: 100px
 		.t-title
+			margin: 0 20px
 			font-size: 20px
 			color: #696969
 			margin-bottom: 10px
