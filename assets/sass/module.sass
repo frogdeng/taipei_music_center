@@ -79,6 +79,7 @@ a
 		width: 100%
 		position: fixed
 		top: 0
+		z-index: 1000
 		.top_header_menu
 			display: block
 			.lil
@@ -103,7 +104,7 @@ a
 					margin-right: 10px
 					background: #222
 					border: none
-					border-bottom: 1px solid #444
+					border-bottom: 1px solid #eee
 					outline: none
 					padding: 0 20px
 					color: #FFF
@@ -111,7 +112,7 @@ a
 					display: none
 					color: #FFF
 					font-size: 13px
-					margin-right: 15px
+					margin-right: 10px
 					input[type="checkbox"]
 						margin-right: 5px
 				.search_btn
@@ -141,10 +142,10 @@ a
 						font-size: 13px
 
 .w_flexible
-	width: 540px !important
+	width: 37% !important
 	input[type="text"]
 		display: block !important
-		width: 220px !important
+		width: 30% !important
 	.filter_radio
 		display: block !important
 
@@ -282,10 +283,13 @@ a
 
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
+		margin-top: 40px
 		.hamburg
 			display: none
 			margin-bottom: 60px
 			position: relative
+		.aside
+			display: none
 		.main_slider
 
 			.new_photo
@@ -350,11 +354,12 @@ a
 							border-bottom: 1px solid #eee
 							line-height: 1.5
 							font-size: 13px
-							padding: 10px 0
+							padding: 10px 20px
 							text-align: center
 							transition: all .3s
 							&:hover
 								color: #FFF
+								background: rgba(1, 114, 133, .95)
 
 					&:hover
 						ul
@@ -471,8 +476,45 @@ a
 			top: -30px
 			z-index: 1200
 			overflow-x: hidden
-			ul
+			.aside_search
+				padding: 0 30px	
+				// width: 80%	
+				margin: 0 auto
 				margin-top: 60px
+				.search_area
+					display: flex
+					justify-content: flex-start
+					align-items: center
+					input[type="text"]
+						width: 90%
+						height: 40px
+						background: #777
+						border: none
+						padding: 0 10px
+						color: #FFF
+						margin-right: 5px
+					.search_btn
+						width: 50px
+						height: 40px
+						color: #FFF
+						background: #666
+						display: flex
+						justify-content: center
+						align-items: center
+				
+				.aside_filter
+					display: flex
+					justify-content: flex-start
+					align-items: center	
+					color: #FFF
+					margin-top: 10px
+					.filter_radio
+						margin-right: 14px
+						input[type="checkbox"]
+							margin-right: 5px
+						
+			ul
+				margin-top: 30px
 				li
 					.m-first
 						display: flex
@@ -568,7 +610,7 @@ a
 		top: 40px
 
 		.main_slider
-			height: 100px
+			height: 80px
 			background: url(../img/inside-keyimage_a1.jpg) center
 			background-size: cover
 			.new_photo
@@ -579,9 +621,11 @@ a
 			position: absolute
 			width: 250px
 			left: 70px
-			top: 20px
+			top: 12px
 			z-index: 1100
 		.hamburg
+			display: none
+		.aside
 			display: none
 		.deskmenu
 			position: absolute
@@ -632,15 +676,16 @@ a
 							width: 140px
 							color: #c0c0c0
 							background: rgba(1, 114, 133, .8)
-							border-bottom: 1px solid rgba(255, 255, 255, .3)
+							border-bottom: 1px solid #eee
 							line-height: 1.5
-							font-size: 14px
-							padding: 10px 0
-							font-weight: 700
+							font-size: 13px
+							padding: 10px 20px
 							text-align: center
-							transition: all .2s
+							transition: all .3s
 							&:hover
 								color: #FFF
+								background: rgba(1, 114, 133, .95)
+
 
 					&:hover
 						ul
@@ -745,6 +790,22 @@ footer
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
 		padding: 0 20px
+		.switch
+			width: 100%
+			height: 45px
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			border-bottom: 1px solid #719596
+			margin-bottom: 20px
+			color: #FFF
+			transition: all .3s
+			cursor: pointer
+			i 
+				margin-left: 5px
+			&:hover
+				background: #017285
 
 		.links_right
 			.links_s
@@ -831,10 +892,14 @@ footer
 					margin-bottom: 20px
 				a
 					display: block
-					color: #eee
+					color: #c0c0c0
 					font-size: 13px
 					line-height: 1.3
 					margin-bottom: 10px
+					transition: all .3s
+
+					&:hover
+						color: #FFF
 
 
 
@@ -848,10 +913,14 @@ footer
 					font-size: 12px
 				a
 					display: block
-					color: #FFF
+					color: #c0c0c0
 					font-size: 14px
 					line-height: 1.3
 					margin-bottom: 10px
+					transition: all .3s
+					&:hover
+						color: #FFF
+
 
 			.copyright
 				+span(9)
@@ -898,6 +967,6 @@ footer
 
 
 
-
-
+.fat-footer_show
+	display: none !important
 

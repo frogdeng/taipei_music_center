@@ -3,6 +3,10 @@ $(function(){
 
 
 
+$('.switch').click(function(){
+	$('.fat_footer').toggleClass( "fat-footer_show" )
+	return false
+});
 
 
 $('.search_btn').click(function(){
