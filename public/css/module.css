@@ -2026,7 +2026,8 @@ a {
     padding-left: 20px;
     font-size: 14px;
     margin-bottom: 40px;
-    width: 100%; }
+    width: 100%;
+    margin-top: 190px; }
   .bread_crumbs:after {
     content: " ";
     display: block;
@@ -4036,7 +4037,10 @@ a {
     margin-left: auto;
     margin-right: auto;
     background: #017285;
-    height: 40px; }
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    top: 0; }
   .top_header:after {
     content: " ";
     display: block;
@@ -4348,8 +4352,8 @@ a {
     height: auto;
     width: 140px;
     color: #c0c0c0;
-    background: rgba(0, 0, 0, 0.8);
-    border-bottom: 1px solid #666;
+    background: rgba(1, 114, 133, 0.8);
+    border-bottom: 1px solid #eee;
     line-height: 1.5;
     font-size: 13px;
     padding: 10px 0;
@@ -4574,14 +4578,17 @@ a {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
-    position: relative; }
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    top: 40px; }
   .main_image_insidepage:after {
     content: " ";
     display: block;
     clear: both; }
   .main_image_insidepage .main_slider {
-    height: 300px;
-    background: url(../img/inside-keyimage_a1.jpg) bottom;
+    height: 100px;
+    background: url(../img/inside-keyimage_a1.jpg) center;
     background-size: cover; }
   .main_image_insidepage .main_slider .new_photo {
     width: 100%; }
@@ -4647,19 +4654,20 @@ a {
     opacity: 0;
     top: 45px;
     left: 0px;
-    transition: all .3s; }
+    transition: all .2s; }
   .main_image_insidepage .deskmenu ul li ul a {
     display: block;
     height: auto;
     width: 140px;
     color: #c0c0c0;
-    background: rgba(0, 0, 0, 0.8);
-    border-bottom: 1px solid #666;
+    background: rgba(1, 114, 133, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     line-height: 1.5;
-    font-size: 13px;
+    font-size: 14px;
     padding: 10px 0;
+    font-weight: 700;
     text-align: center;
-    transition: all .3s; }
+    transition: all .2s; }
   .main_image_insidepage .deskmenu ul li ul a:hover {
     color: #FFF; }
   .main_image_insidepage .deskmenu ul li:hover ul {

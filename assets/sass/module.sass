@@ -76,6 +76,9 @@ a
 		+container
 		background: #017285
 		height: 40px
+		width: 100%
+		position: fixed
+		top: 0
 		.top_header_menu
 			display: block
 			.lil
@@ -193,11 +196,11 @@ a
 			ul
 				margin-top: 60px
 				li
-					.m-first 
+					.m-first
 						display: flex
 						justify-content: space-between
 						align-items: center
-						height: 50px	
+						height: 50px
 						width: 100%
 						padding: 0 0 0 30px
 						line-height: 1.4
@@ -212,7 +215,7 @@ a
 							display: flex
 							justify-content: center
 							align-items: center
-							i 
+							i
 								font-size: 30px
 					.m-second_bg
 						position: absolute
@@ -236,7 +239,7 @@ a
 							display: flex
 							justify-content: flex-start
 							align-items: center
-							i 
+							i
 								font-size: 20px
 								margin-right: 10px
 						ul
@@ -246,7 +249,7 @@ a
 							li
 								.m-second
 									display: block
-									height: 50px	
+									height: 50px
 									width: 100%
 									padding: 0 0 0 30px
 									line-height: 1.4
@@ -343,8 +346,8 @@ a
 							height: auto
 							width: 140px
 							color: #c0c0c0
-							background: rgba(0, 0, 0, .8)
-							border-bottom: 1px solid #666
+							background: rgba(1, 114, 133, .8)
+							border-bottom: 1px solid #eee
 							line-height: 1.5
 							font-size: 13px
 							padding: 10px 0
@@ -471,11 +474,11 @@ a
 			ul
 				margin-top: 60px
 				li
-					.m-first 
+					.m-first
 						display: flex
 						justify-content: space-between
 						align-items: center
-						height: 50px	
+						height: 50px
 						width: 100%
 						padding: 0 0 0 30px
 						line-height: 1.4
@@ -490,7 +493,7 @@ a
 							display: flex
 							justify-content: center
 							align-items: center
-							i 
+							i
 								font-size: 30px
 					.m-second_bg
 						position: absolute
@@ -514,7 +517,7 @@ a
 							display: flex
 							justify-content: flex-start
 							align-items: center
-							i 
+							i
 								font-size: 20px
 								margin-right: 10px
 						ul
@@ -524,7 +527,7 @@ a
 							li
 								.m-second
 									display: block
-									height: 50px	
+									height: 50px
 									width: 100%
 									padding: 0 0 0 30px
 									line-height: 1.4
@@ -559,10 +562,14 @@ a
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
 		margin-bottom: 60px
-		position: relative
+		position: fixed
+		height: 100px
+		width: 100%
+		top: 40px
+
 		.main_slider
-			height: 300px
-			background: url(../img/inside-keyimage_a1.jpg) bottom
+			height: 100px
+			background: url(../img/inside-keyimage_a1.jpg) center
 			background-size: cover
 			.new_photo
 				width: 100%
@@ -618,19 +625,20 @@ a
 						opacity: 0
 						top: 45px
 						left: 0px
-						transition: all .3s
+						transition: all .2s
 						a
 							display: block
 							height: auto
 							width: 140px
 							color: #c0c0c0
-							background: rgba(0, 0, 0, .8)
-							border-bottom: 1px solid #666
+							background: rgba(1, 114, 133, .8)
+							border-bottom: 1px solid rgba(255, 255, 255, .3)
 							line-height: 1.5
-							font-size: 13px
+							font-size: 14px
 							padding: 10px 0
+							font-weight: 700
 							text-align: center
-							transition: all .3s
+							transition: all .2s
 							&:hover
 								color: #FFF
 
