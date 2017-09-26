@@ -19,7 +19,7 @@ $w_desktop: 12 split
 $w_pad: 8 split
 $w_mobile: 6 split
 
-$breakpoint_desktop: 979px
+$breakpoint_desktop: 1000px
 $breakpoint_pad: 767px
 $breakpoint_mobile: 0px
 
@@ -79,7 +79,7 @@ a
 		width: 100%
 		position: fixed
 		top: 0
-		z-index: 1000
+		z-index: 3300
 		.top_header_menu
 			display: block
 			.lil
@@ -106,7 +106,7 @@ a
 					border: none
 					border-bottom: 1px solid #eee
 					outline: none
-					padding: 0 20px
+					padding: 0px
 					color: #FFF
 				.filter_radio
 					display: none
@@ -142,7 +142,7 @@ a
 						font-size: 13px
 
 .w_flexible
-	width: 37% !important
+	width: 430px !important
 	input[type="text"]
 		display: block !important
 		width: 30% !important
@@ -341,75 +341,75 @@ a
 			transition: all .4s
 
 
-		.logo
-			position: absolute
-			width: 250px
-			left: 70px
-			top: 20px
-			z-index: 1100
-		.deskmenu
-			position: absolute
-			width: 900px
-			height: 50px
-			// background-color: #eee
-			z-index: 1000
-			right: 40px
-			top: 10px
-			display: flex
-			flex-direction: row
-			justify-content: flex-end
-			align-items: center
-			ul
+			.logo
+				position: absolute
+				width: 250px
+				left: 70px
+				top: 20px
+				z-index: 1100
+			.deskmenu
+				position: absolute
+				width: 900px
+				height: 50px
+				// background-color: #eee
+				z-index: 1000
+				right: 40px
+				top: 10px
 				display: flex
 				flex-direction: row
 				justify-content: flex-end
 				align-items: center
-				li
-					position: relative
-					a
-						display: block
-						height: 50px
-						color: #005968
-						padding: 0 25px
-						font-size: 18px
-						font-weight: 500
-						display: flex
-						flex-direction: row
-						justify-content: flex-end
-						align-items: center
-						&:hover
-							color: #222
-
-					ul
-						position: absolute
-						display: block
-						width: 140px
-						z-index: 1000
-						visibility: hidden
-						opacity: 0
-						top: 45px
-						left: 0px
-						transition: all .3s
+				ul
+					display: flex
+					flex-direction: row
+					justify-content: flex-end
+					align-items: center
+					li
+						position: relative
 						a
 							display: block
-							height: auto
-							width: 140px
-							color: #c0c0c0
-							background: rgba(1, 114, 133, .8)
-							border-bottom: 1px solid #eee
-							line-height: 1.5
-							font-size: 13px
-							padding: 10px 20px
-							text-align: center
-							transition: all .3s
+							height: 50px
+							color: #005968
+							padding: 0 25px
+							font-size: 18px
+							font-weight: 500
+							display: flex
+							flex-direction: row
+							justify-content: flex-end
+							align-items: center
 							&:hover
-								color: #FFF
-								background: rgba(1, 114, 133, .95)
+								color: #222
 
-					&:hover
 						ul
-							visibility: visible
-							opacity: 1
+							position: absolute
+							display: block
+							width: 140px
+							z-index: 1000
+							visibility: hidden
+							opacity: 0
+							top: 45px
+							left: 0px
+							transition: all .3s
+							a
+								display: block
+								height: auto
+								width: 140px
+								color: #c0c0c0
+								background: rgba(1, 114, 133, .8)
+								border-bottom: 1px solid #eee
+								line-height: 1.5
+								font-size: 13px
+								padding: 10px 20px
+								text-align: center
+								transition: all .3s
+								&:hover
+									color: #FFF
+									background: rgba(1, 114, 133, .95)
+
+						&:hover
+							ul
+								visibility: visible
+								opacity: 1
 
 
 
@@ -658,6 +658,7 @@ a
 		height: 100px
 		width: 100%
 		top: 40px
+		z-index: 3100
 
 		.main_slider
 			height: 80px
