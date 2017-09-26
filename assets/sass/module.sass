@@ -339,8 +339,6 @@ a
 			top: 40px
 			z-index: 4000
 			transition: all .4s
-
-
 			.logo
 				position: absolute
 				width: 250px
@@ -414,7 +412,11 @@ a
 
 
 .index_menu_bg
-	background-color: rgba(210,210,210,.9) !important
+	background-color: rgba(30,30,30,.9) !important
+	ul
+		li
+			a
+				color: #FFF !important
 	// background: url(../img/inside-keyimage_a1.jpg) !important
 
 .hamburg-open
@@ -488,7 +490,7 @@ a
 		+container
 		margin-bottom: 40px
 		position: relative
-		.main_slider
+		.inside_slider
 			height: 300px
 			background: url(../img/inside-keyimage_a1.jpg) bottom
 			background-size: cover
@@ -634,7 +636,7 @@ a
 		+container
 		margin-bottom: 40px
 		position: relative
-		.main_slider
+		.inside_slider
 			height: 300px
 			background: url(../img/inside-keyimage_a1.jpg) bottom
 			background-size: cover
@@ -654,94 +656,100 @@ a
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
 		margin-bottom: 60px
-		position: fixed
-		height: 100px
+		height: 300px
 		width: 100%
-		top: 40px
-		z-index: 3100
 
-		.main_slider
-			height: 80px
+		.inside_slider
+			height: 300px
 			background: url(../img/inside-keyimage_a1.jpg) center
 			background-size: cover
 			.new_photo
 				width: 100%
 				img
 					width: 100%
-		.logo
-			position: absolute
-			width: 250px
-			left: 70px
-			top: 12px
-			z-index: 1100
+
 		.hamburg
 			display: none
 		.aside
 			display: none
-		.deskmenu
-			position: absolute
-			width: 900px
-			height: 50px
-			// background-color: #eee
-			z-index: 1000
-			right: 40px
-			top: 10px
-			display: flex
-			flex-direction: row
-			justify-content: flex-end
-			align-items: center
-			ul
+
+		.inside_menu
+			width: 100%
+			height: 90px
+			position: fixed
+			top: 40px
+			z-index: 4000
+			transition: all .4s
+			.logo
+				position: absolute
+				width: 250px
+				left: 70px
+				top: 12px
+				z-index: 1100
+			.deskmenu
+				position: absolute
+				width: 900px
+				height: 50px
+				// background-color: #eee
+				z-index: 1000
+				right: 40px
+				top: 10px
 				display: flex
 				flex-direction: row
 				justify-content: flex-end
 				align-items: center
-				li
-					position: relative
-					a
-						display: block
-						height: 50px
-						color: #FFF
-						padding: 0 25px
-						font-size: 18px
-						font-weight: 500
-						display: flex
-						flex-direction: row
-						justify-content: flex-end
-						align-items: center
-						&:hover
-							color: #eee
-
-					ul
-						position: absolute
-						display: block
-						width: 140px
-						z-index: 1000
-						visibility: hidden
-						opacity: 0
-						top: 45px
-						left: 0px
-						transition: all .2s
+				ul
+					display: flex
+					flex-direction: row
+					justify-content: flex-end
+					align-items: center
+					li
+						position: relative
 						a
 							display: block
-							height: auto
-							width: 140px
-							color: #c0c0c0
-							background: rgba(1, 114, 133, .8)
-							border-bottom: 1px solid #eee
-							line-height: 1.5
-							font-size: 13px
-							padding: 10px 20px
-							text-align: center
-							transition: all .3s
+							height: 50px
+							color: #FFF
+							padding: 0 25px
+							font-size: 18px
+							font-weight: 500
+							display: flex
+							flex-direction: row
+							justify-content: flex-end
+							align-items: center
 							&:hover
-								color: #FFF
-								background: rgba(1, 114, 133, .95)
+								color: #eee
 
-
-					&:hover
 						ul
-							visibility: visible
-							opacity: 1
+							position: absolute
+							display: block
+							width: 140px
+							z-index: 1000
+							visibility: hidden
+							opacity: 0
+							top: 45px
+							left: 0px
+							transition: all .2s
+							a
+								display: block
+								height: auto
+								width: 140px
+								color: #c0c0c0
+								background: rgba(1, 114, 133, .8)
+								border-bottom: 1px solid #eee
+								line-height: 1.5
+								font-size: 13px
+								padding: 10px 20px
+								text-align: center
+								transition: all .3s
+								&:hover
+									color: #FFF
+									background: rgba(1, 114, 133, .95)
+
+
+						&:hover
+							ul
+								visibility: visible
+								opacity: 1
 
 
 

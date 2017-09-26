@@ -13,16 +13,25 @@ $('.switch').click(function(){
 
   $(window).scroll(function (event) {
       var keyimage_h = $('.main_slider').height();
+      var inside_slider_h = $('.inside_slider').height();
 
       var sc_1 = $(window).scrollTop() ;
 
       // console.log(keyimage_h);
       // console.log(sc);
-      if(sc_1 > keyimage_h){
+
+      if(sc_1 > 400){
         $(".index_menu").addClass('index_menu_bg')
       }
       else{
         $(".index_menu").removeClass('index_menu_bg')
+      }
+
+      if(sc_1 > inside_slider_h){
+        $(".inside_menu").addClass('index_menu_bg')
+      }
+      else{
+        $(".inside_menu").removeClass('index_menu_bg')
       }
 
   });
