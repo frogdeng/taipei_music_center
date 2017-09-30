@@ -4883,6 +4883,24 @@ a {
     content: " ";
     display: block;
     clear: both; }
+  footer .switch {
+    width: 100%;
+    height: 45px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid #719596;
+    margin-bottom: 20px;
+    color: #FFF;
+    transition: all .3s;
+    cursor: pointer; }
+  footer .switch i {
+    margin-left: 5px; }
   footer .links_right .links_s {
     width: 47.61905%;
     float: left;
