@@ -84,8 +84,11 @@ $('.search_btn').click(function(){
 	  $(".show-4").click(function(){
 	      $('.active-4').addClass("second-open");
 	    });
-	  $(".show-5").click(function(){
-	      $('.active-5').addClass("second-open");
+    $(".show-5").click(function(){
+        $('.active-5').addClass("second-open");
+      });
+	  $(".show-6").click(function(){
+	      $('.active-6').addClass("second-open");
 	    });
 
 
