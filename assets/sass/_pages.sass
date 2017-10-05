@@ -38,7 +38,7 @@ $susy: (debug: (image: hide))
 		width: 100%
 		// background: #eee
 		.bread_crumbs_div
-			width: 100%
+			+span(6)
 			display: flex
 			flex-direction: row
 			justify-content: flex-start
@@ -67,7 +67,7 @@ $susy: (debug: (image: hide))
 
 		// background: #eee
 		.bread_crumbs_div
-			width: 100%
+			+span(8)
 			display: flex
 			flex-direction: row
 			justify-content: flex-start
@@ -156,7 +156,35 @@ $susy: (debug: (image: hide))
 .icons
 	+susy-breakpoint($breakpoint_mobile, $mobile)
 		+container
-		display: none
+		width: 100%
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: flex-start
+		align-items: center
+		align-self: flex-end
+		.function
+			display: none
+		.social_media, .font
+			margin-left: 20px
+			margin-bottom: 10px
+			display: flex
+			flex-direction: row
+			justify-content: flex-end
+			align-items: center
+			.i_icon
+				width: 30px
+				height: 30px
+				margin-right: 10px
+				color: #FFF
+				border-radius:  50%
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				cursor: pointer
+				i
+					font-size: 18px
 
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
