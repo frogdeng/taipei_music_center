@@ -2307,6 +2307,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    float: right;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
@@ -2315,8 +2316,8 @@ a {
     flex-wrap: wrap;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    -ms-flex-align: center;
-    align-items: center; }
+    -ms-flex-align: end;
+    align-items: flex-end; }
   .icons:after {
     content: " ";
     display: block;
