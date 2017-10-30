@@ -464,12 +464,12 @@ a {
     align-items: center;
     border-bottom: 1px solid #CECECE;
     padding-bottom: 10px;
-    padding-left: 15px;
+    padding-left: 8px;
     margin-bottom: 20px; }
   .show_event .show_tab .show_filter_tab {
-    margin-right: 40px;
+    margin-right: 15px;
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 14px;
     cursor: pointer; }
   .show_event .show_content .show_list-about {
     width: 97.61905%;
@@ -479,7 +479,24 @@ a {
     margin-bottom: 30px; }
   .show_event .show_content .show_list-about .show_gogo {
     border-bottom: 1px solid #CECECE;
-    margin-bottom: 12px; }
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center; }
+  .show_event .show_content .show_list-about .show_gogo img {
+    display: block;
+    margin-right: 15px;
+    width: 25%; }
+  .show_event .show_content .show_list-about .show_gogo .summary {
+    width: 70%; }
   .show_event .show_content .show_list-about .show_gogo h6 {
     font-size: 17px;
     color: #594460;
@@ -612,6 +629,8 @@ a {
   .show_event .show_content .show_list-about .show_gogo {
     border-bottom: 1px solid #CECECE;
     margin-bottom: 23px; }
+  .show_event .show_content .show_list-about .show_gogo img {
+    display: none; }
   .show_event .show_content .show_list-about .show_gogo h6 {
     font-size: 18px;
     color: #594460;
@@ -745,6 +764,8 @@ a {
   .show_event .show_content .show_list-about .show_gogo {
     border-bottom: 1px solid #CECECE;
     margin-bottom: 16px; }
+  .show_event .show_content .show_list-about .show_gogo img {
+    display: none; }
   .show_event .show_content .show_list-about .show_gogo h6 {
     font-size: 18px;
     color: #594460;
@@ -956,7 +977,7 @@ a {
     margin-left: 1.13636%;
     margin-right: 1.13636%; }
   .performance_hall .hall_right .hall-s {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     position: relative;
     overflow: hidden;
     background-color: #718; }
@@ -1014,7 +1035,7 @@ a {
     margin-left: 0.83333%;
     margin-right: 0.83333%; }
   .performance_hall .hall_right .hall-s {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     position: relative;
     overflow: hidden;
     background-color: #718; }
