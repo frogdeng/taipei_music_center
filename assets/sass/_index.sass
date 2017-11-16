@@ -32,7 +32,7 @@ $susy: (debug: (image: hide))
 		.news_info
 			+span(6)
 			// background-color: #390
-			margin-bottom: 40px
+			margin-bottom: 20px
 			.t-title
 				font-size: 23px
 				color: #696969
@@ -283,7 +283,7 @@ $susy: (debug: (image: hide))
 .show_event_wrapper
 	background: url('../img/slashline.png')
 	background-repeat: repeat-x
-	margin-top: 60px
+	margin-top: 20px
 	margin-bottom: 40px
 
 
@@ -292,7 +292,7 @@ $susy: (debug: (image: hide))
 		+container
 		padding: 0 20px
 		height: 500px
-		padding-top: 80px
+		padding-top: 40px
 		.show_tab
 			display: flex
 			flex-direction: row
@@ -352,6 +352,7 @@ $susy: (debug: (image: hide))
 
 			.show_block
 				+span(6)
+				display: none
 				.show_detail
 					+span(3)
 					margin-bottom: 20px
@@ -377,6 +378,7 @@ $susy: (debug: (image: hide))
 						transition: all .3s
 			.show_block-col-4
 				+span(6)
+				display: none
 				.show_detail
 					+span(3)
 					height: 230px
@@ -416,7 +418,7 @@ $susy: (debug: (image: hide))
 		+container
 		padding: 0 20px
 		height: 500px
-		padding-top: 80px
+		padding-top: 40px
 		.show_tab
 			display: flex
 			flex-direction: row
@@ -463,6 +465,8 @@ $susy: (debug: (image: hide))
 
 			.show_block
 				+span(5)
+				display: block
+				
 				.show_detail
 					+span(4)
 					height: 160px
@@ -489,6 +493,8 @@ $susy: (debug: (image: hide))
 						transition: all .3s
 			.show_block-col-4
 				+span(5)
+				display: block
+				
 				.show_detail
 					+span(4)
 					height: 230px
@@ -500,10 +506,11 @@ $susy: (debug: (image: hide))
 					a
 						img
 							display: block
-							width: 100%
 							position: absolute
-							top: 23px
-							transform: scale(1.23)
+							width: 100%
+							height: 100%
+							object-fit: cover
+							top: 0px
 					.mask
 						position: absolute
 						width: 100%
@@ -527,7 +534,7 @@ $susy: (debug: (image: hide))
 		+container
 		padding: 0 20px
 		height: 500px
-		padding-top: 80px
+		padding-top: 40px
 		.show_tab
 			display: flex
 			flex-direction: row
@@ -578,6 +585,8 @@ $susy: (debug: (image: hide))
 
 			.show_block
 				+span(9)
+				display: block
+				
 				.show_detail
 					+span(4)
 					height: 230px
@@ -590,8 +599,12 @@ $susy: (debug: (image: hide))
 						img
 							display: block
 							position: absolute
-							top: 23px
-							transform: scale(1.23)
+							width: 100%
+							height: 100%
+							object-fit: cover
+							top: 0px
+			
+							// transform: scale(1.23)
 					.mask
 						position: absolute
 						width: 100%
@@ -613,6 +626,8 @@ $susy: (debug: (image: hide))
 
 			.show_block-col-4
 				+span(9)
+				display: block
+				
 				.show_detail
 					+span(6)
 					height: 230px
@@ -625,9 +640,10 @@ $susy: (debug: (image: hide))
 						img
 							display: block
 							width: 100%
+							height: 100%
+							object-fit: cover
 							position: absolute
-							top: 23px
-							transform: scale(1.23)
+
 					.mask
 						position: absolute
 						width: 100%
@@ -660,10 +676,10 @@ $susy: (debug: (image: hide))
 	+susy-breakpoint($breakpoint_mobile, $mobile)
 		+container
 		padding: 0 20px
-		margin-bottom: 50px
+		margin-bottom: 10px
 		.hall_left
 			+span(6)
-			margin-bottom: 30px
+			margin-bottom: 10px
 			.hall-l
 				position: relative
 				width: 100%
@@ -710,7 +726,7 @@ $susy: (debug: (image: hide))
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
 		padding: 0 20px
-		margin-bottom: 50px
+		margin-bottom: 10px
 		.hall_left
 			+span(4)
 			margin-bottom: 30px
@@ -760,7 +776,7 @@ $susy: (debug: (image: hide))
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
 		padding: 0 20px
-		margin-bottom: 50px
+		margin-bottom: 10px
 		.hall_left
 			+span(6)
 			.hall-l
